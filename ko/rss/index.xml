@@ -1,0 +1,2563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JSer.info</title>
+    <description>JavaScriptの最新情報を紹介する週刊ブログ</description>
+    <link>https://jser.info/ko/</link>
+    <atom:link href="https://jser.info/ko/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 29 Jan 2024 10:10:54 +0900</pubDate>
+    <lastBuildDate>Mon, 29 Jan 2024 10:10:54 +0900</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>2024-01-28: Firefox 122, Deno 1.40, Safari 17.4 Beta</title>
+        <description>&lt;p&gt;JSer.info #678 - Firefox 122.0가 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.mozilla.org/en-US/firefox/122.0/releasenotes/&quot;&gt;Firefox 122.0, See All New Features, Updates and Fixes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/122&quot;&gt;Firefox 122 for developers - Mozilla | MDN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; 자식 요소로 &lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; 허용, CSS &lt;code&gt;offset-position&lt;/code&gt;과 &lt;code&gt;offset-path&lt;/code&gt; 프로퍼티를 기본적으로 유효화해요.&lt;br&gt;
+&lt;code&gt;ArrayBuffer.prototype.transfer()&lt;/code&gt; 구현, &lt;a href=&quot;https://github.com/w3c/svgwg/pull/901&quot;&gt;XSS 대책으로&lt;/a&gt; SVG의 &lt;code&gt;&amp;lt;use&amp;gt;&lt;/code&gt;에 Data URL 이용할 수 없도록 변경되었어요.&lt;br&gt;
+또한, 실험적 기능으로 Declarative shadow DOM, Popover API, Clipboard API, &lt;code&gt;Intl.Segmenter&lt;/code&gt;가 구현되었어요.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Deno 1.40가 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://deno.com/blog/v1.40&quot;&gt;Deno 1.40: Temporal API&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Temporal API 지원, &lt;code&gt;import.meta.filename&lt;/code&gt;/&lt;code&gt;import.meta.dirname&lt;/code&gt; 지원되어요.&lt;br&gt;
+&lt;code&gt;import.meta.filename&lt;/code&gt;/&lt;code&gt;import.meta.dirname&lt;/code&gt;는, Node.js와 Bun에서도 지원되고 있어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://nodejs.org/en/blog/release/v20.11.0&quot;&gt;Node.js — Node v20.11.0 (LTS)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bun.sh/blog/bun-v1.0.23#import-meta-dirname-and-import-meta-filename-support&quot;&gt;Bun v1.0.23 | Bun Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;그 외로는, &lt;code&gt;window&lt;/code&gt;, &lt;code&gt;Deno.run()&lt;/code&gt;, &lt;code&gt;Deno.serveHttp()&lt;/code&gt;, &lt;code&gt;Deno.metrics()&lt;/code&gt; 등 오래된 API를 비권장화했어요.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Safari 17.4 Beta가 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.apple.com/documentation/safari-release-notes/safari-17_4-release-notes&quot;&gt;Safari 17.4 Beta Release Notes | Apple Developer Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;CSS, &lt;code&gt;@scope&lt;/code&gt; 지원, Block Containers에서의 &lt;code&gt;align-content&lt;/code&gt; 지원이 있어요.&lt;br&gt;
+HTML, &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; 안에 &lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; 지원. &lt;code&gt;&amp;lt;input type=checkbox switch&amp;gt;&lt;/code&gt; 지원이 있구요.&lt;br&gt;
+JS, &lt;code&gt;Promise.withResolvers&lt;/code&gt;, &lt;code&gt;ArrayBuffer.prototype.transfer&lt;/code&gt;, &lt;code&gt;Object.groupBy&lt;/code&gt; 지원이 추가되었어요.&lt;br&gt;
+그리고, iOS에서 VP8/VP9/WebM 지원, Full Screen API 지원 소식도 있어요.&lt;/p&gt;
+
+&lt;p&gt;이 버전과 관계없지만, Apple은 EU에서는 WebKit 이외의 브라우저 엔진을 이용가능하다 발표했어요.&lt;br&gt;
+꽤 많은 제한이 있어서, 실제 이용이 어떤지는 불명확하지만, iOS 상에서 다른 브라우저 엔진 이용가능할 수 있을 가능성이 생겼어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.apple.com/newsroom/2024/01/apple-announces-changes-to-ios-safari-and-the-app-store-in-the-european-union/&quot;&gt;Apple announces changes to iOS, Safari, and the App Store in the European Union - Apple&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.apple.com/support/alternative-browser-engines&quot;&gt;Using alternative browser engines in the European Union - Support - Apple Developer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;관런된 내용으로, Mozilla가 Apple나 Google OS 플랫폼이 제한 하고 있는 내용한 웹사이트도 공개하고 있어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://mozilla.github.io/platform-tilt/&quot;&gt;Platform Tilt - Mozilla&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h3 class=&quot;inline-support&quot;&gt;To support JSer.info&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;😘 Recommend JSer.info to your friends!&lt;/li&gt;
+    &lt;li&gt;❤️ Support &lt;a href=&quot;https://github.com/sponsors/azu&quot;&gt;@azu on GitHub Sponsors&lt;/a&gt;/&lt;a
+            href=&quot;https://jser.info/sponsor/&quot;&gt;JSer.info Sponsors&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;🐦 Follow &lt;a href=&quot;https://twitter.com/jser_info&quot;&gt;@jser_info on X(Twitter)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;헤드라인&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-v2-0-0-volarjs-volar-js&quot;&gt;Release v2.0.0 · volarjs/volar.js&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/volarjs/volar.js/releases/tag/v2.0.0&quot; title=&quot;Release v2.0.0 · volarjs/volar.js&quot;&gt;github.com/volarjs/volar.js/releases/tag/v2.0.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;TypeScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;volar v2.0.0 출시.&lt;br&gt;
+코어를 TypeScript에 의존하지 않도록 변경, &lt;code&gt;@volar/cdn&lt;/code&gt; 비권장화&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;firefox-122-0-see-all-new-features-updates-and-fixes&quot;&gt;Firefox 122.0, See All New Features, Updates and Fixes&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.mozilla.org/en-US/firefox/122.0/releasenotes/&quot; title=&quot;Firefox 122.0, See All New Features, Updates and Fixes&quot;&gt;www.mozilla.org/en-US/firefox/122.0/releasenotes/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Firefox&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Firefox 122 출시.&lt;br&gt;
+&lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; 자식 요소로 &lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; 허용, CSS &lt;code&gt;offset-position&lt;/code&gt;과 &lt;code&gt;offset-path&lt;/code&gt; 프로퍼티 기본적으로 유효화.&lt;br&gt;
+&lt;code&gt;ArrayBuffer.prototype.transfer()&lt;/code&gt; 구현, SVG &lt;code&gt;&amp;lt;use&amp;gt;&lt;/code&gt;에 Data URL 이용 불가능하도록 변경.&lt;br&gt;
+실험적 기능으로 Declarative shadow DOM, Popover API, Clipboard API, &lt;code&gt;Intl.Segmenter&lt;/code&gt; 구현&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/122&quot; title=&quot;Firefox 122 for developers - Mozilla | MDN&quot;&gt;Firefox 122 for developers - Mozilla | MDN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-v5-90-0-webpack-webpack&quot;&gt;Release v5.90.0 · webpack/webpack&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/webpack/webpack/releases/tag/v5.90.0&quot; title=&quot;Release v5.90.0 · webpack/webpack&quot;&gt;github.com/webpack/webpack/releases/tag/v5.90.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;webpack&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;webpack v5.90.0 출시.&lt;br&gt;
+&lt;code&gt;node.{__filename,__dirname}&lt;/code&gt;에 &lt;code&gt;node-module&lt;/code&gt; 옵션 추가, 버그 수정&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;deno-1-40-temporal-api&quot;&gt;Deno 1.40: Temporal API&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://deno.com/blog/v1.40&quot; title=&quot;Deno 1.40: Temporal API&quot;&gt;deno.com/blog/v1.40&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;deno&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Deno v1.40 출시.&lt;br&gt;
+Temporal API 지원, &lt;code&gt;import.meta.filename&lt;/code&gt;/&lt;code&gt;import.meta.dirname&lt;/code&gt; 지원, &lt;code&gt;deno.json&lt;/code&gt;의 &lt;code&gt;imports&lt;/code&gt; 지정 방법 개선.&lt;br&gt;
+&lt;code&gt;window&lt;/code&gt;, &lt;code&gt;Deno.run()&lt;/code&gt;, &lt;code&gt;Deno.serveHttp()&lt;/code&gt;, &lt;code&gt;Deno.metrics()&lt;/code&gt; 오래된 API 비권장화&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;safari-17-4-beta-release-notes-apple-developer-documentation&quot;&gt;Safari 17.4 Beta Release Notes | Apple Developer Documentation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.apple.com/documentation/safari-release-notes/safari-17_4-release-notes&quot; title=&quot;Safari 17.4 Beta Release Notes | Apple Developer Documentation&quot;&gt;developer.apple.com/documentation/safari-release-notes/safari-17_4-release-notes&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;safari&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Safari 17.4 Beta 출시.&lt;br&gt;
+CSS, &lt;code&gt;@scope&lt;/code&gt; 지원, Block Containers에서의 &lt;code&gt;align-content&lt;/code&gt; 지원.&lt;br&gt;
+HTML, &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt;안에서 &lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; 지원.&lt;code&gt;&amp;lt;input type=checkbox switch&amp;gt;&lt;/code&gt; 지원.&lt;br&gt;
+JS, &lt;code&gt;Promise.withResolvers&lt;/code&gt;, &lt;code&gt;ArrayBuffer.prototype.transfer&lt;/code&gt;, &lt;code&gt;Object.groupBy&lt;/code&gt; 지원.&lt;br&gt;
+iOS에서 VP8/VP9/WebM 지원, Full Screen API 지원.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-v0-20-0-evanw-esbuild&quot;&gt;Release v0.20.0 · evanw/esbuild&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/evanw/esbuild/releases/tag/v0.20.0&quot; title=&quot;Release v0.20.0 · evanw/esbuild&quot;&gt;github.com/evanw/esbuild/releases/tag/v0.20.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;esbuild&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;esbuild v0.20.0 출시.&lt;br&gt;
+Deno 1.40 대응, &lt;code&gt;node_modules&lt;/code&gt; 가 없으므로, 파일 확장자 우선순위 변경&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;quickjs-javascript-engine&quot;&gt;QuickJS Javascript Engine&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://bellard.org/quickjs/&quot; title=&quot;QuickJS Javascript Engine&quot;&gt;bellard.org/quickjs/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;QuickJS ES2023 지원.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ES2022 Top-Level await&lt;/li&gt;
+&lt;li&gt;ES2023 Change Array by copy, &lt;code&gt;Array.prototype.{findLast, findLastIndex}&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;ES2024 &lt;code&gt;Object.groupBy&lt;/code&gt;, &lt;code&gt;Promise.withResolvers&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;announcing-adonisjs-v6&quot;&gt;Announcing AdonisJS v6&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://adonisjs.com/blog/adonisjs-v6-announcement&quot; title=&quot;Announcing AdonisJS v6&quot;&gt;adonisjs.com/blog/adonisjs-v6-announcement&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;nodejs&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;server&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;AdonisJS v6 출시.&lt;br&gt;
+ESM으로 이행, Vite integration 지원.&lt;br&gt;
+VineJS 검증 라이브러리 작성, 테스트 프레임워크나 템플릿 엔진 등 코어를 패키지로 빼내서 이용 가능 하게끔&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;슬라이드, 영상&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;next-js-app-router-caching-explained-youtube&quot;&gt;Next.js App Router Caching: Explained! - YouTube&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=VBlSe8tvg4U&quot; title=&quot;Next.js App Router Caching: Explained! - YouTube&quot;&gt;www.youtube.com/watch?v&amp;#x3D;VBlSe8tvg4U&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Next.js&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;video&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Next.js App Router 캐시가 어떤 원리로 동작하는지에 대한 영상.&lt;br&gt;
+Pages Router와 App Router 기본적인 캐시 동작 차이, &lt;code&gt;noCache()&lt;/code&gt;/&lt;code&gt;cache()&lt;/code&gt;에서 캐시 여부 제어, &lt;code&gt;revalidateTag()&lt;/code&gt;로 재검증.&lt;br&gt;
+&lt;code&gt;useOptimistic()&lt;/code&gt;이나 JavaScript없을 때 동작에 대해서&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;서비스, 웹사이트, 문서&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;the-aha-stack-aha&quot;&gt;The AHA Stack | AHA&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ahastack.dev/&quot; title=&quot;The AHA Stack | AHA&quot;&gt;ahastack.dev/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;HTML&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;document&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Astro x Htmx x Alpine.js AHA Stack 관련 웹사이트&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;platform-tilt-mozilla&quot;&gt;Platform Tilt - Mozilla&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mozilla.github.io/platform-tilt/&quot; title=&quot;Platform Tilt - Mozilla&quot;&gt;mozilla.github.io/platform-tilt/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;browser&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Mozilla&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;apple&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;google&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Microsoft&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;document&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;iOS/Android/Windows 플랫폼 상에서 브라우저 제한되고 있는 기능에 대한 정리 웹사이트&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://bentocache.dev/docs/introduction&quot; title=&quot;Introduction&quot;&gt;bentocache.dev/docs/introduction&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;nodejs&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;AdonisJS 에서 나온 캐시 라이브러리.&lt;br&gt;
+Driver로 Redis 같은 곳에서 백엔드 프로바이더 지정, Multi Tier에 의한 캐시 사이즈 다층화, Cache stampede 대책으로 구현하고 있음&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;소프트웨어, 도구, 라이브러리&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;chrisguttandin-worker-timers-a-replacement-for-setinterval-and-settimeout-which-works-in-unfocused-windows&quot;&gt;chrisguttandin/worker-timers: A replacement for setInterval() and setTimeout() which works in unfocused windows.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/chrisguttandin/worker-timers&quot; title=&quot;chrisguttandin/worker-timers: A replacement for setInterval() and setTimeout() which works in unfocused windows.&quot;&gt;github.com/chrisguttandin/worker-timers&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;browser&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;webworker&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;브라우저는 탭이 활성화 상태가 아닌 경우, interval와 timeout 최소값을 강제적으로 변경.&lt;br&gt;
+Web Worker에는 제한이 없다는 것을 이용해, 제한 없이 &lt;code&gt;setTimeout&lt;/code&gt;와 &lt;code&gt;setInterval&lt;/code&gt; 제공하는 라이브러리&lt;/p&gt;
+
+&lt;hr&gt;
+</description>
+        <pubDate>Sun, 28 Jan 2024 15:24:28 +0900</pubDate>
+        <link>https://jser.info/ko/2024/01/28/firefox-122-deno-1.40-safari-17.4-beta/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2024/01/28/firefox-122-deno-1.40-safari-17.4-beta/</guid>
+        
+        <category>document</category>
+        
+        <category>browser</category>
+        
+        <category>nodejs</category>
+        
+        <category>TypeScript</category>
+        
+        <category>Firefox</category>
+        
+        
+        <category>JSer</category>
+        
+      </item>
+    
+      <item>
+        <title>2024-01-21: Astro 4.2, Bun 1.0.24(Bun Shell), Remix SPA 모드</title>
+        <description>&lt;p&gt;JSer.info #677 - Astro 4.2가 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://astro.build/blog/astro-420/&quot;&gt;Astro 4.2 | Astro&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Astro 4.2에는, Prerendering 실험적 옵션으로 Speculation Rules API 사용해서 Prerendering 지원해요.&lt;br&gt;
+그리고, &lt;code&gt;injectRoute&lt;/code&gt;이나 파일 기반 라우팅이 충돌할 때를 위해 새로운 우선도 규칙을 opt-in 지원합니다.&lt;br&gt;
+그 외로는, &lt;code&gt;redirectToDefaultLocale&lt;/code&gt; 옵션을 추가함에 기본 언어로 리다이렉트하는 것을 무효화할 수 있으며, 접근성 규칙도 추가되어요.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Bun v1.0.24가 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://bun.sh/blog/bun-v1.0.24&quot;&gt;Bun v1.0.24 | Bun Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bun v1.0.24에는, &lt;a href=&quot;https://github.com/google/zx&quot;&gt;zx&lt;/a&gt;처럼 쉘스크립트를 다룰 수 있는 Bun Shell에 함수가 추가되었어요.&lt;br&gt;
+&lt;code&gt;$&lt;/code&gt;으로 크로스플랫폼 지원하는데, 파이프나 빌트인 코맨드도 구현되었어요.&lt;br&gt;
+그리고, Glob이나 JavaScript의 Object에 실행 결과를 작성하도록하는 기능도 가지고 있어요.&lt;/p&gt;
+
+&lt;p&gt;자세한 것은, 다음 글과 문서에서 확인할 수 있어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://bun.sh/blog/the-bun-shell&quot;&gt;The Bun Shell | Bun Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bun.sh/docs/runtime/shell&quot;&gt;$ Shell – API | Bun Docs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://azukiazusa.dev/blog/remix-spa-mode/&quot;&gt;Remix SPA 모드&lt;/a&gt;에서는, Remix에 실험적으로 구현된 SPA모드에 대해 소개해요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://remix.run/docs/en/main/future/spa-mode&quot;&gt;SPA Mode (Unstable) | Remix&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;글에는, 클라이언트 렌더링만으로 동작하는 SPA 모드 사용방법이나 제한에 대해 소개되고 있어요.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h3 class=&quot;inline-support&quot;&gt;To support JSer.info&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;😘 Recommend JSer.info to your friends!&lt;/li&gt;
+    &lt;li&gt;❤️ Support &lt;a href=&quot;https://github.com/sponsors/azu&quot;&gt;@azu on GitHub Sponsors&lt;/a&gt;/&lt;a
+            href=&quot;https://jser.info/sponsor/&quot;&gt;JSer.info Sponsors&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;🐦 Follow &lt;a href=&quot;https://twitter.com/jser_info&quot;&gt;@jser_info on X(Twitter)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;헤드라인&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;prettier-3-2-support-jsonc-and-angular-s-icu-expression-prettier&quot;&gt;Prettier 3.2: Support JSONC and Angular’s ICU expression · Prettier&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://prettier.io/blog/2024/01/12/3.2.0.html&quot; title=&quot;Prettier 3.2: Support JSONC and Angular’s ICU expression · Prettier&quot;&gt;prettier.io/blog/2024/01/12/3.2.0.html&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tools&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Prettier 3.2 출시.&lt;br&gt;
+&lt;code&gt;jsonc&lt;/code&gt; 파서 지원, Angular ICU expression 지원.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;idraw-js-idraw-js&quot;&gt;iDraw.js | iDraw.js&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://idraw.js.org/docs/en-US/&quot; title=&quot;iDraw.js | iDraw.js&quot;&gt;idraw.js.org/docs/en-US/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;canvas&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;editor&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Canvas 기반 도형 표현 라이브러리와 GUI 에디터.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;node-js-node-v21-6-0-current&quot;&gt;Node.js — Node v21.6.0 (Current)&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://nodejs.org/en/blog/release/v21.6.0&quot; title=&quot;Node.js — Node v21.6.0 (Current)&quot;&gt;nodejs.org/en/blog/release/v21.6.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;nodejs&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Node.js v21.6.0 출시.&lt;br&gt;
+&lt;code&gt;net.createConnection&lt;/code&gt;에 connection 관련 이벤트 추가, Permission Model에 &lt;code&gt;--allow-addons&lt;/code&gt; 추가&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;astro-4-2-astro&quot;&gt;Astro 4.2 | Astro&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://astro.build/blog/astro-420/&quot; title=&quot;Astro 4.2 | Astro&quot;&gt;astro.build/blog/astro-420/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;astro&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Astro 4.2 출시.&lt;br&gt;
+실험적 옵션으로 Speculation Rules API 사용한 Prerendering 지원. &lt;code&gt;injectRoute&lt;/code&gt;이나 파일 베이스 라우팅이 충돌할 때 우선도 규칙을 opt-in 지원.&lt;br&gt;
+&lt;code&gt;redirectToDefaultLocale&lt;/code&gt; 옵션 추가, 기본 언어로 리다이렉트를 무효화할 수 있음, 접근성 규칙 추가.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;bun-v1-0-24-bun-blog&quot;&gt;Bun v1.0.24 | Bun Blog&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://bun.sh/blog/bun-v1.0.24&quot; title=&quot;Bun v1.0.24 | Bun Blog&quot;&gt;bun.sh/blog/bun-v1.0.24&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Bun&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Bun v1.0.24 출시.&lt;/p&gt;
+
+&lt;p&gt;zx 같이 쉘스크립트를 다루는 Bun Shell에 &lt;code&gt;$&lt;/code&gt; 함수 추가, &lt;code&gt;perf_hooks&lt;/code&gt; 호환성 개선&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;읽을거리&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;migrating-from-zod-to-valibot-a-comparative-experience-matthew-kwong&quot;&gt;Migrating from Zod to Valibot: A Comparative Experience | Matthew Kwong&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mwskwong.com/blog/migrating-from-zod-to-valibot-a-comparative-experience&quot; title=&quot;Migrating from Zod to Valibot: A Comparative Experience | Matthew Kwong&quot;&gt;mwskwong.com/blog/migrating-from-zod-to-valibot-a-comparative-experience&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Zod에서 Valibot으로 이행해보고 비교한 글&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;remix-spa&quot;&gt;Remix SPA 모드&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://azukiazusa.dev/blog/remix-spa-mode/&quot; title=&quot;Remix SPA 모드&quot;&gt;azukiazusa.dev/blog/remix-spa-mode/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Remix&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Remix에 실험적으로 구현된 SPA 모드에 대해&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;react-libraries-for-2024&quot;&gt;React Libraries for 2024&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.robinwieruch.de/react-libraries/&quot; title=&quot;React Libraries for 2024&quot;&gt;www.robinwieruch.de/react-libraries/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;카테고리 별 React 라이브러리, 도구 소개&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;designing-better-target-sizes&quot;&gt;Designing better target sizes&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ishadeed.com/article/target-size&quot; title=&quot;Designing better target sizes&quot;&gt;ishadeed.com/article/target-size&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;CSS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Design&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;mobile&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;유저가 상호작용하기 위한 트리거인 클릭, 탭의 타겟사이즈에 대한 글.&lt;br&gt;
+터치 크기, Spacing, 피드백.&lt;br&gt;
+실제 웹사이트 예시로 들며, 계층 메뉴의 Safe Area 삼각형을 clip-path로 정의하는 방법, 네비게이션 UI, 플레이어 UI, 체크 박스 UI.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;npm-in-review-a-2023-retrospective-on-growth-security-and-quirky-facts-socket&quot;&gt;npm in Review: A 2023 Retrospective on Growth, Security, and Quirky Facts - Socket&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://socket.dev/blog/2023-npm-retrospective&quot; title=&quot;npm in Review: A 2023 Retrospective on Growth, Security, and Quirky Facts - Socket&quot;&gt;socket.dev/blog/2023-npm-retrospective&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;npm 저장소 상에 있는 패키지 분석 글.&lt;br&gt;
+매월 다운로드 수, 의존관계 수가 많은 패키지, 다운로드 수가 많은 패키지, 2023년에 처음 출시되어 다운로드 수가 많은 패키지.&lt;br&gt;
+그 외로, 패키지 크기가 큰 패키지나 관리자가 많은 패키지 등ど&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;introducing-fsx-a-modern-filesystem-api-for-javascript-human-who-codes&quot;&gt;Introducing fsx: A modern filesystem API for JavaScript - Human Who Codes&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://humanwhocodes.com/blog/2024/01/fsx-modern-filesystem-api-javascript/&quot; title=&quot;Introducing fsx: A modern filesystem API for JavaScript - Human Who Codes&quot;&gt;humanwhocodes.com/blog/2024/01/fsx-modern-filesystem-api-javascript/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;nodejs&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;deno&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Node.js이나 Deno의 File System API 추상화한 라이브러리.&lt;br&gt;
+파일 조작 로고 얻기나 테스트 용으로 메모리상에 동작하는 Adapter 구현도 포함.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/humanwhocodes/fsx&quot; title=&quot;humanwhocodes/fsx: A modern filesystem API for JavaScript&quot;&gt;humanwhocodes/fsx: A modern filesystem API for JavaScript&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;슬라이드, 영상&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;parsing-javascript-speaker-deck&quot;&gt;Parsing Javascript - Speaker Deck&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/brn/parsing-javascript&quot; title=&quot;Parsing Javascript - Speaker Deck&quot;&gt;speakerdeck.com/brn/parsing-javascript&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ECMAScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;slide&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;JavaScript 언어 파서에 대한 슬라이드.&lt;br&gt;
+파서의 기술, JS은 LL(1) 문법에는 있지만 BNF 레벨에서는 엄밀한 파서가 어렵기에, 직접 작성해야하는 경우가 많은 사실에 대하여.&lt;br&gt;
+정규표현 리터럴 / 템플릿 리터럴 / 분할대입 같이 파서가 어려운 구문, PreParsing이라 불리는 최적화 기법에 관하여.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;웹사이트, 서비스, 문서&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;cloudflare-next-on-pages-cli-to-build-and-develop-next-js-apps-for-cloudflare-pages&quot;&gt;cloudflare/next-on-pages: CLI to build and develop Next.js apps for Cloudflare Pages&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/cloudflare/next-on-pages&quot; title=&quot;cloudflare/next-on-pages: CLI to build and develop Next.js apps for Cloudflare Pages&quot;&gt;github.com/cloudflare/next-on-pages&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;cloudflare&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Next.js&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Cloudflare Pages에 Next.js 애플리케이션 동작시키는 도구&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;소프트웨어, 도구, 라이브러리&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;wevm-vocs-minimal-documentation-framework-powered-by-react-vite&quot;&gt;wevm/vocs: Minimal Documentation Framework, powered by React + Vite.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/wevm/vocs&quot; title=&quot;wevm/vocs: Minimal Documentation Framework, powered by React + Vite.&quot;&gt;github.com/wevm/vocs&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;vite&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;document&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tools&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;React와 Vite 사용한 문서 사이트 프레임워크&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;penrose-penrose-create-beautiful-diagrams-just-by-typing-notation-in-plain-text&quot;&gt;penrose/penrose: Create beautiful diagrams just by typing notation in plain text.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/penrose/penrose&quot; title=&quot;penrose/penrose: Create beautiful diagrams just by typing notation in plain text.&quot;&gt;github.com/penrose/penrose&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;diagram&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;글로 선언적 여러 다이어그램을 그리는 라이브러리.&lt;/p&gt;
+
+&lt;hr&gt;
+</description>
+        <pubDate>Sun, 21 Jan 2024 11:13:29 +0900</pubDate>
+        <link>https://jser.info/ko/2024/01/21/astro-4.2-bun-1.0.24bun-shell-remixspa/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2024/01/21/astro-4.2-bun-1.0.24bun-shell-remixspa/</guid>
+        
+        <category>Tools</category>
+        
+        <category>nodejs</category>
+        
+        <category>React</category>
+        
+        <category>canvas</category>
+        
+        <category>editor</category>
+        
+        
+        <category>JSer</category>
+        
+      </item>
+    
+      <item>
+        <title>JSer.info 13주년: JavaScript 정보처 정리하기</title>
+        <description>&lt;p&gt;JSer.info이 2024년 1월 16일으로 13주년을 맞이했어요.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jser.info/ko/&quot;&gt;JSer.info&lt;/a&gt;은, JSer.info 이름에서 알 수 있듯이, JavaScript 정보를 정보하고 전달하기 위함을 목적으로 하고 있습니다.&lt;br&gt;
+이 글에서는, JSer.info의 13년간 데이터를 보며, 활용하고 있는 JavaScript 정보처를 정리하는 방법을 소개합니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;jser-info&quot;&gt;지금까지의 JSer.info&lt;/h2&gt;
+
+&lt;p&gt;JSer.info은 13년간 총 676개 글을 공개, 12429개 사이트를 소개했습니다.&lt;br&gt;
+&lt;code&gt;365 * 13  / 676 = 7.01&lt;/code&gt;  이므로, 주 1회 갱신을 13년 지속했다는 소리가 됩니다.&lt;/p&gt;
+
+&lt;p&gt;2023년 JSer.info에서 소개한 사이트를 살펴보겠습니다.&lt;/p&gt;
+
+&lt;p&gt;도메인 별로 소개 횟수를 정렬하면 이하와 같습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://jser.info/uploads/media/2024/01/16-1705368012.png&quot; alt=&quot;2023년 JSer.info 도메인 별 소개 글 수&quot;&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;2023년 도메인 별 소개 횟수: &lt;a href=&quot;https://github.com/jser/jser-info-13th-research/blob/main/domain-2023.csv&quot;&gt;domain-2023.csv&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;GitHub가 30% 가까이 점유하고 있음을 알 수 있습니다.&lt;br&gt;
+그럼, GitHub 저장소 별로 소개 횟수를 정렬해 보겠습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://jser.info/uploads/media/2024/01/16-1705368110.png&quot; alt=&quot;2023년 JSer.info의 GitHub 저장소 별 소개 글 수&quot;&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;2023년 GitHub 저장소 별 소개 횟수: &lt;a href=&quot;https://github.com/jser/jser-info-13th-research/blob/main/domagithubin-2023.csv&quot;&gt;github-2023.csv&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;GitHub 소개가 많은 것은, GitHub Releases에 출시 노트를 작성하고 있는 라이브러리나 도구입니다.&lt;br&gt;
+JSer.info에는 출시 노트 블로그가 따로 있다면 이를 우선하기에, 무조건 출시가 많은 순이라는 의미는 아닙니다.&lt;br&gt;
+가령, &lt;a href=&quot;https://bun.sh/&quot;&gt;Bun&lt;/a&gt;은 블로그에 상세한 출시 노트가 있으므로, GitHub 수에는 포함되지 않습니다.&lt;/p&gt;
+
+&lt;p&gt;소개하고 있는 도메인이나 저장소 경향은 시간에 따라 변화합니다.&lt;br&gt;
+예를 보면, 2015년 JSer.info 소개한 사이트를 보겠습니다.&lt;/p&gt;
+
+&lt;p&gt;2015년 도메인 별 소개 횟수는 이하와 같습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://jser.info/uploads/media/2024/01/16-1705368477.png&quot; alt=&quot;2015년 JSer.info 도메인 별 소개 글 수&quot;&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;2015년 도메인 별 소개 횟수: &lt;a href=&quot;https://github.com/jser/jser-info-13th-research/blob/main/domain-2015.csv&quot;&gt;domain-2015.csv&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;GitHub가 많은건 같지만, 등장하고 잇는 사이트 경향은 2023년과 다릅니다.&lt;br&gt;
+똑같이, 2015년 GitHub 저장소 별 소개 횟수는 이하와 같습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://jser.info/uploads/media/2024/01/16-1705368585.png&quot; alt=&quot;2015년 JSer.info의 GitHub 저장소 별 소개 글 횟수&quot;&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;2015년 GitHub 저장소 별 소개 횟수: &lt;a href=&quot;https://github.com/jser/jser-info-13th-research/blob/main/github-2015.csv&quot;&gt;github-2015.csv&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;2015년 등장하는 저장소 경향도 다르지만, 저장소 자체도 1회 뿐인, 즉 단순 저장소 소개 패턴이 많았습니다.&lt;br&gt;
+이 때는, GitHub Releases 출시 노트를 작성하는 라이브러리나 도구가 적은 것도 한 몫했을 것이라 생각합니다.&lt;/p&gt;
+
+&lt;p&gt;이 데이터는 &lt;a href=&quot;https://jser.info/data-dashboard/&quot;&gt;JSer.info Data Dashboard&lt;/a&gt;이나 &lt;a href=&quot;https://github.com/jser/jser-info-13th-research&quot;&gt;jser/jser-info-13th-research&lt;/a&gt;에서 확인 가능합니다.&lt;/p&gt;
+
+&lt;p&gt;여기서 알 수 있는 것은, 같은 사이트가 계속 갱신되는 것도 아니며, 같은 저장소가 계속 갱신되지 않는 점입니다.&lt;br&gt;
+달리 말해, 「새로운 정보」를 알리는 장소와 시간도 변화하고 있다는 것입니다.&lt;/p&gt;
+
+&lt;p&gt;이에, 새로운 정보를 얻기위해서는 새로운 정보가 알려지는 장소를 꼭 찾아야할 필요가 있습니다.&lt;br&gt;
+어떻게 새로운 정보가 알려지는 장소를 찾는가ㅔ 대해서는 10주년을 맞이했을 때 정리했습니다.&lt;br&gt;
+단, 이는 대량의 노이즈를 보지 않으면 안되므로 이를 선호하지 않는다면 권하지 않습니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://jser.info/2021/01/16/jser-10th/&quot;&gt;JSer.info 10주년: JavaScript 정보 모으는 방법, 작성 방법, 정리 방법 - JSer.info&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jser.info/ko/&quot;&gt;JSer.info&lt;/a&gt;나 &lt;a href=&quot;https://javascriptweekly.com/&quot;&gt;JavaScript Weekly&lt;/a&gt;, &lt;a href=&quot;https://b.hatena.ne.jp/&quot;&gt;하테나 북마크&lt;/a&gt;나 &lt;a href=&quot;https://news.ycombinator.com/&quot;&gt;Hacker News&lt;/a&gt; 같이 메타적인 사이트 보는 것도, 새로운 정보를 발견하는 좋은 방법입니다.&lt;/p&gt;
+
+&lt;p&gt;JSer.info도 &lt;a href=&quot;https://jser.info/watch-list/&quot;&gt;JSer.info Watch List&lt;/a&gt;, 살아있는 JavaScript 정보처를 정리하는 사이트를 공개하고 있습니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;watch-list&quot;&gt;Watch List&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jser.info/watch-list/&quot;&gt;JSer.info Watch List&lt;/a&gt;는, JSer.info에서 2년 이내에 소개된 사이트 목록을 공개하고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jser.info/watch-list/&quot;&gt;&lt;img src=&quot;https://jser.info/uploads/media/2024/01/16-1705371043.png&quot; alt=&quot;JSer.info Watch List&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;JSer.info에서 소개했다 &amp;amp; 2년 필터를 통해서, 어느 정도 정보처가 살아있다 기대할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;이번에는 업데이트를 통해, 다음과 같은 변화가 있었습니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GitHub 저장소 별 데이터 추가
+
+&lt;ul&gt;
+&lt;li&gt;저장소 마다 소개 횟수 볼 수 있음&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;사이트 별 RSS 피드 추가
+
+&lt;ul&gt;
+&lt;li&gt;그 사이트가 RSS 피드를 공개하고 있다면, 그 RSS 피드 볼 수 있음&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;RSS를 정리한 OPML 파일을 작성, 정보처 RSS를 일괄적으로 구독 가능
+
+&lt;ul&gt;
+&lt;li&gt;RSS를 정리한 OPML 파일을 작성, 정보처 RSS를 일괄적으로 구독 가능&lt;/li&gt;
+&lt;li&gt;많은 RSS리더는 OPML 파일을 import 함으로, 일괄적으로 RSS 구독 가능&lt;/li&gt;
+&lt;li&gt;Feedly: &lt;a href=&quot;https://docs.feedly.com/article/52-how-can-i-export-my-sources-and-feeds-through-opml&quot;&gt;How can I export my sources and feeds (through OPML)? - Feedly Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Inoreader: &lt;a href=&quot;https://www.inoreader.com/blog/2014/05/opml-subscriptions.html&quot;&gt;OPML subscriptions | Inoreader blog&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Inoreader에는 OPML 자체를 구독 = OPML가 갱신된 것을 자동적으로 구독하는 RSS도 늘어나는 기능&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;RSS를 정리한 OPML 파일은 다음 2가지가 있습니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;OPML Feed(ALL): &lt;a href=&quot;https://jser.info/watch-list/data/feed-list.opml&quot;&gt;feed-list.opml&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GitHub 포함해, 모든 사이트 RSS 포함&lt;/li&gt;
+&lt;li&gt;상당한 정보량이므로, RSS 리더에 익숙하지 않다면 사용하지 않는 것이 좋습니다&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;OPML Feed(정보량 조절판): &lt;a href=&quot;https://jser.info/watch-list/data/opml-list.opml&quot;&gt;opml-list.opml&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;하루 10-20건 가량 갱신됩니다&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;이것만 있다면 RSS 리더를 사용하지 않는 사람에게는 전달되지 않으므로, &lt;a href=&quot;https://jser.info/watch-list-rss/&quot;&gt;JSer.info Watch List RSS&lt;/a&gt;를 만들었습니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;watch-list-rss&quot;&gt;Watch List RSS&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jser.info/watch-list-rss/&quot;&gt;JSer.info Watch List RSS&lt;/a&gt;는, JSer.info 정보처가 되는 사이트를 갱신해서 하나의 RSS 피드로 공개하고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jser.info/watch-list-rss/&quot;&gt;&lt;img src=&quot;https://jser.info/uploads/media/2024/01/16-1705371404.png&quot; alt=&quot;JSer.info Watch List RSS&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;사이트 상에는 정보처가 되는 사이트 갱신도 보이도록 되어 있어서, 이를 보는 것 만으로 어떠한 갱신이 있었는가 알 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;사이트마다 RSS 피드를 하나의 RSS 피드로 정리함으로, 하나의 RSS 피드 구독해도 여러 사이트의 갱신을 볼 수 있습니다. 또한, 하나의 RSS 피드 구독만하면 되므로, Slack이나 Discord 같은 곳에서도 RSS를 보이기 쉽습니다.&lt;/p&gt;
+
+&lt;p&gt;Slack은 다음 명령어를 통해 RSS 등록 가능합니다.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;/feed https://jser.info/watch-list-rss/feeds/rss.xml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;기본적 데이터 소스는, &lt;a href=&quot;https://jser.info/watch-list/data/opml-list.opml&quot;&gt;OPML Feed(정보량 조절판): opml-list.opml&lt;/a&gt;과 같이, 하루 10-20건 정도 갱신될 것입니다.&lt;br&gt;
+노이즈가 갱신될 때는, Issue 같은 곳에서 알려주시면 감사합니다. (일부 분량이 많은 사이트를 제거하는 대응도 하고 있습니다.)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/jser/watch-list-rss/issues&quot;&gt;Issues · jser/watch-list-rss&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jser.info/watch-list-rss/&quot;&gt;JSer.info Watch List RSS&lt;/a&gt;에는, 분량이 자동적으로 조절되어, 내용도 자동적으로 갱신되므로, 가볍게 마음으로 구독해주시면 좋겠습니다.&lt;/p&gt;
+
+&lt;p&gt;📝 원 출처는 &lt;a href=&quot;https://yamadashy.github.io/tech-blog-rss-feed/&quot;&gt;기업 기술 블로그 RSS&lt;/a&gt;를 이용하고 있습니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;jser-info&quot;&gt;JSer.info&lt;/h2&gt;
+
+&lt;p&gt;그럼에도 불구하고 정보량이 여전히 많다 느끼는 분은は, 「JavaScript 정보를 정리해 정확히 전달한다」를 목적으로 두고 있는 &lt;a href=&quot;https://jser.info/ko/&quot;&gt;JSer.info&lt;/a&gt;가 있습니다.&lt;/p&gt;
+
+&lt;p&gt;JSer.info은 대체로 주 1회 갱신에, 13 ~ 15 정도의 사이트 / 글 / 라이브러리를 매주 소개합니다.&lt;br&gt;
+JSer.info 갱신 정책이 있므며, &lt;a href=&quot;https://jser.info/policy/&quot;&gt;JSer.info Policy&lt;/a&gt;에서 확인 가능합니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://jser.info/policy/#do&quot;&gt;Do&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://jser.info/policy/#%E6%83%85%E5%A0%B1%E3%82%92%E6%95%B4%E7%90%86%E3%81%97%E3%81%A6%E4%BC%9D%E3%81%88%E3%81%BE%E3%81%99&quot;&gt;정보를 정제해 전달합니다&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jser.info/policy/#%E4%BA%8B%E5%AE%9F%E3%81%A8%E3%83%95%E3%82%A7%E3%82%A2%E3%83%8D%E3%82%B9%E3%82%92%E8%BF%BD%E6%B1%82%E3%81%97%E3%81%BE%E3%81%99&quot;&gt;사실과 공정을 추구합니다&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jser.info/policy/#%E6%83%85%E5%A0%B1%E6%BA%90%E3%81%AB%E6%95%AC%E6%84%8F%E3%82%92%E6%89%95%E3%81%84%E3%81%BE%E3%81%99&quot;&gt;정보처에 존중을 갖습니다&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jser.info/policy/#%E5%AE%8C%E6%88%90%E3%81%97%E3%81%A6%E3%81%84%E3%81%AA%E3%81%84%E3%81%93%E3%81%A8%E3%82%92%E5%8F%97%E3%81%91%E5%85%A5%E3%82%8C%E3%81%BE%E3%81%99&quot;&gt;완성되지 않은 것을 받아들이지 않습니다&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jser.info/policy/#do-not&quot;&gt;Do Not&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://jser.info/policy/#%E5%85%83%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%81%99%E3%81%B9%E3%81%A6%E3%82%92%E4%BC%9D%E3%81%88%E3%82%8B%E3%81%AE%E3%81%AF%E7%9B%AE%E7%9A%84%E3%81%A7%E3%81%AF%E3%81%82%E3%82%8A%E3%81%BE%E3%81%9B%E3%82%93&quot;&gt;원 출처 전체를 전달하는 것이 목적이 아닙니다&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;JSer.info은, 요일이나 시간이 아니라, 데이터 양에 갱신하는 것이 특징적 방법을 취하고 있습니다.&lt;br&gt;
+기본적 기준 13개여 개의 소개하고 싶은 사이트가 있다면 갱신 작업을 시작합니다.&lt;br&gt;
+이에, 데이터 양이 충분치 않다면 갱신일은 변동됩니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://jser.info/status-of-post/&quot;&gt;JSer.info Status of Posts&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;JSer.info 갱신 상태 기준값을 보는 사이트&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/jser/status-api&quot;&gt;JSer.info Status of Posts API&lt;/a&gt;도 있습니다&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;무슨 요일에 갱신같이 시간이 아닌, 데이터 양으로 갱신하는 타이밍을 잡음은, 갱신 부담을 낮추고 품질을 일관적으로 하기 위함입니다.&lt;/p&gt;
+
+&lt;p&gt;JSer.info은 외부 사이트에 의존하므로, 갱신 타이밍을 시간으로 잡는다면, 제어할 수 없는 것을 제어하려 하려하고, 부하가 높아집니다.&lt;br&gt;
+그리고, JSer.info은 가능하다면 지속 가능하기 위해서 만들었기에, 근래는 시간보다 정보량 제어를 우선합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://jser.info/uploads/media/2024/01/16-1705372612.png&quot; alt=&quot;JSer.info 짧지만 연속성 있는 목표&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;이전에, &lt;a href=&quot;https://azu.github.io/slide/2017/jser_info/how_to_make_jser_info.html&quot;&gt;JSer.info 만드는 방법&lt;/a&gt; 슬라이드를 만들었을 때, JSer.info 갱신 구조를 정리했습니다.&lt;br&gt;
+슬라이드에는 쉽게 이해시키기 위해「JSer.info은 일주일에 1번 정도 투고됩니다」했습니다만, 실제로는 정보량을 가지고 갱신됩니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://azu.github.io/slide/2017/jser_info/how_to_make_jser_info.html&quot;&gt;JSer.info 만드는 방법&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;정보량에 의한 갱신 타이밍 결정은, 읽는 사람에게도 일정한 품질의 글을 지속하기 쉬운 장점이 있습니다. 많아도 미묘하고, 적어도 미묘하므로, 정보량에 의해 갱신하는 것은 안정감도 있다 생각합니다.&lt;br&gt;
+이는, 제어할 수 없는 것은 제어하지 않는다에 기반한 생각입니다.&lt;/p&gt;
+
+&lt;p&gt;정리하면 JSer.info 관련해, 다음과 같은 정보 취득 방법이 있습니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://jser.info/watch-list/&quot;&gt;JSer.info Watch List&lt;/a&gt;: JSer.info 정보처 목록&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jser.info/watch-list-rss/&quot;&gt;JSer.info Watch List RSS&lt;/a&gt;: 정보처의 정보량을 조절해 하나로 묶은 RSS&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jser.info/ko/&quot;&gt;JSer.info&lt;/a&gt;: 주 1회 정리&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://realtime.jser.info/&quot;&gt;Realtime JSer.info&lt;/a&gt;: JSer.info 갱신을 실시간으로 보는 사이트
+
+&lt;ul&gt;
+&lt;li&gt;Twitter/X: &lt;a href=&quot;https://twitter.com/jser_info&quot;&gt;JSer.info (@jser_info) / X&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mastodon: &lt;a href=&quot;https://mstdn.jp/@jser&quot;&gt;JSer.info (@jser@mstdn.jp) - mstdn.jp&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;취향에 맞는 방법으로 JavaScritp 정보를 얻어가주시길 바랍니다!&lt;/p&gt;
+
+&lt;h2 id=&quot;jser-info&quot;&gt;JSer.info 지원하는 방법&lt;/h2&gt;
+
+&lt;p&gt;JSer.info 읽는 것뿐만이 아니라 어떠한 지원을 하고 싶은 분에게.&lt;/p&gt;
+
+&lt;p&gt;JSer.info 같은 사이트를 만들고 싶은 분은, 어느 정도 노하우가 있으므로, &lt;a href=&quot;https://join.slack.com/t/jserinfo/shared_invite/zt-g2shzp7o-f_tj6OaphCAFw5Qlt2Jw0A&quot;&gt;JSer.info Slack&lt;/a&gt;에서 연락해주시길 바랍니다.&lt;/p&gt;
+
+&lt;p&gt;JSer.info에 소개하고 싶은 글이 있는 분은, &lt;a href=&quot;https://tally.so/r/mVJVRN&quot;&gt;JSer.info Ping&lt;/a&gt;을 통해 연락해주시길 바랍니다. 직접, &lt;a href=&quot;https://join.slack.com/t/jserinfo/shared_invite/zt-g2shzp7o-f_tj6OaphCAFw5Qlt2Jw0A&quot;&gt;JSer.info Slack&lt;/a&gt;에 연락해주셔도 OK입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/sponsors/azu&quot;&gt;GitHub Sponsors&lt;/a&gt; 스폰서가 되어, 지속적인 지원 또한 환영합니다.&lt;br&gt;
+기업 관계자분은, &lt;strong&gt;&lt;a href=&quot;https://github.com/sponsors/azu&quot;&gt;💚JSer.info Sponsor&lt;/a&gt;&lt;/strong&gt;가 되면 사이트에 로고를 표기하므로 검토해주시길 바랍니다. 회사 Slack에 JSer.info의 URL를 공유하고 싶으신 분은 부디 제안해주시길 바랍니다. (단순 계산으로, 주 1회 갱신이므로 1년에 52회 가량 로고를 노출시킬 수 있습니다)&lt;/p&gt;
+
+&lt;p&gt;더 단순한 방법으로, 주변에 JSer.info를 권하는 것도 지원방법입니다. 또한, X(Twitter)에 &lt;a href=&quot;https://twitter.com/jser_info&quot;&gt;@jser_info&lt;/a&gt;, Mastodon에 &lt;a href=&quot;https://mstdn.jp/@jser&quot;&gt;JSer.info (@jser@mstdn.jp)&lt;/a&gt; 팔로우 하는 것도 지원 방법입니다.&lt;/p&gt;
+
+&lt;p&gt;JSer.info은 니치한 JavaScript 정보사이트로, 출시하고 &lt;a href=&quot;https://azu.github.io/slide/offline_study/jser_info.html#slide5&quot;&gt;2년 지속하자는&lt;/a&gt; 목표였습니다만, 자동화와 갱신 비용 안정화로 인해서 13년이나 지속할 수 있었습니다.&lt;/p&gt;
+
+&lt;p&gt;마지막으로, JSer.info를 읽어주시는 분, 지원해주시는 분, 정말 감사드립니다!&lt;/p&gt;
+
+&lt;h3 class=&quot;sponsors-title&quot;&gt;&lt;a href=&quot;https://jser.info/sponsor/&quot;&gt;JSer.info Sponsors&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p class=&quot;sponsors-description&quot;&gt;
+
+    &lt;b&gt;JSer.info Sponsors&lt;/b&gt; are those who have support JSer.info as &lt;a href=&quot;https://github.com/sponsors/azu&quot; aria-label=&quot;Sponsor @azu on GitHub&quot;&gt;GitHub Sponsors&lt;/a&gt;.
+
+&lt;/p&gt;
+
+&lt;div class=&quot;sponsors-list&quot;&gt;
+&lt;!-- Sponsor for https://github.com/sponsors/azu --&gt;
+&lt;div class=&quot;sponsors-listItem&quot;&gt;
+&lt;a href=&quot;https://cybozu.co.jp&quot; title=&quot;Cybozu, Inc.&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img src=&quot;https://github.com/cybozu-sponsorship.png&quot; alt=&quot;&quot; width=&quot;64&quot; height=&quot;64&quot; loading=&quot;lazy&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;n주년 글은, 다음 페이지에 정리해 두었습니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://jser.info/ko/about/&quot;&gt;JSer.info에 관하여 - JSer.info&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 16 Jan 2024 00:22:00 +0900</pubDate>
+        <link>https://jser.info/ko/2024/01/16/jser-13th/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2024/01/16/jser-13th/</guid>
+        
+        <category>JSer</category>
+        
+        
+        <category>雑記</category>
+        
+      </item>
+    
+      <item>
+        <title>2024-01-11: Biome v1.5, Node.js v20.11.0, Rspack 0.5</title>
+        <description>&lt;p&gt;JSer.info #676 - Biome v1.5가 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://biomejs.dev/blog/biome-v1-5/&quot;&gt;Biome v1.5 | Biome&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Git 같은 VCS에서 변경된 파일만 다루는 &lt;code&gt;--changed&lt;/code&gt; 플래그 추가, &lt;code&gt;biome ci&lt;/code&gt;에서 GitHub의 Problem Matcher에 맞춘 결과를 보임으로 PR 메세지 대응 가능해요. 또한, &lt;code&gt;biome explain&lt;/code&gt; 추가, Lint 규칙 추가도 있어요.&lt;/p&gt;
+
+&lt;p&gt;출시에 맞춰, Biome의 2024년 로드맵도 공개되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://biomejs.dev/blog/roadmap-2024/&quot;&gt;Roadmap 2024 | Biome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://zenn.dev/cybozu_frontend/articles/biome-roadmap-2024&quot;&gt;Biome 2024년 로드맵 공개와 v1.5.0 출시&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;현재 CSS 이 진행중이며, 앞으로는 HTML와 Markdown도 대응할 거에요.&lt;br&gt;
+플러그인 구조에 대해서도 검토중이고요.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Node.js v20.11.0가 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://nodejs.org/en/blog/release/v20.11.0&quot;&gt;Node v20.11.0 (LTS) | Node.js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;import.meta.dirname&lt;/code&gt;/&lt;code&gt;import.meta.filename&lt;/code&gt; 추가, &lt;code&gt;--disable-warning&lt;/code&gt; 플래그 추가, Stream 성능 개선했어요.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Rspack v0.5가 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.rspack.dev/blog/announcing-0.5.html&quot;&gt;Rspack 0.5 Release Announcement - Rspack&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Module Federation 지원이 추가되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.rspack.dev/blog/module-federation-added-to-rspack.html&quot;&gt;Module Federation added to Rspack - Rspack&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;파괴적 변경으로, 빌트인으로 정의된 기본값 변경(js이나 ts) 삭제하고 유저가 정의하는 변경, &lt;br&gt;
+&lt;code&gt;resolve.exntesions&lt;/code&gt; 기본값에서 &lt;code&gt;.ts&lt;/code&gt;나 &lt;code&gt;.tsx&lt;/code&gt; 삭제, Deprecated였던 &lt;code&gt;builtins.*&lt;/code&gt; 옵션이나 loader 삭제가 있어요.&lt;br&gt;
+대다수의 기본 동작을 webpack에 맞추도록 변경했어요.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h3 class=&quot;inline-support&quot;&gt;To support JSer.info&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;😘 Recommend JSer.info to your friends!&lt;/li&gt;
+    &lt;li&gt;❤️ Support &lt;a href=&quot;https://github.com/sponsors/azu&quot;&gt;@azu on GitHub Sponsors&lt;/a&gt;/&lt;a
+            href=&quot;https://jser.info/sponsor/&quot;&gt;JSer.info Sponsors&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;🐦 Follow &lt;a href=&quot;https://twitter.com/jser_info&quot;&gt;@jser_info on X(Twitter)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;헤드라인&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;bun-v1-0-21-bun-blog&quot;&gt;Bun v1.0.21 | Bun Blog&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://bun.sh/blog/bun-v1.0.21&quot; title=&quot;Bun v1.0.21 | Bun Blog&quot;&gt;bun.sh/blog/bun-v1.0.21&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Bun&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Bun v1.0.21 출시.&lt;br&gt;
+&lt;code&gt;console.table()&lt;/code&gt;의 지원, &lt;code&gt;bun:sqlite&lt;/code&gt; 에러 표시나 메모리 소모량 개선.&lt;br&gt;
+Linux에서 &lt;code&gt;blob.arrayBuffer()&lt;/code&gt;의 COW 지원하고 메모리 소비 개선, &lt;code&gt;bun build --public-path=&amp;lt;path&amp;gt;&lt;/code&gt;의 지원&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;google-shares-update-on-next-step-toward-phasing-out-third-party-cookies-in-chrome&quot;&gt;Google shares update on next step toward phasing out third-party cookies in Chrome&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.google/products/chrome/privacy-sandbox-tracking-protection/&quot; title=&quot;Google shares update on next step toward phasing out third-party cookies in Chrome&quot;&gt;blog.google/products/chrome/privacy-sandbox-tracking-protection/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Chrome&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;privacy&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;news&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;2024년 1월 4일 부터 Chrome 유저의 1% 대상으로 서드파티 Cookie 무효 테스트 개시&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2023oct&quot; title=&quot;Preparing for the end of third-party cookies  |  Privacy Sandbox  |  Google for Developers&quot;&gt;Preparing for the end of third-party cookies  |  Privacy Sandbox  |  Google for Developers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;2023-javascript-rising-stars&quot;&gt;2023 JavaScript Rising Stars&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://risingstars.js.org/2023/en&quot; title=&quot;2023 JavaScript Rising Stars&quot;&gt;risingstars.js.org/2023/en&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Github&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;news&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;GitHub 스타 수 비교하는 JavaScript Rising Stars 2023년 결과 공개&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;astro-4-1-astro&quot;&gt;Astro 4.1 | Astro&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://astro.build/blog/astro-410/&quot; title=&quot;Astro 4.1 | Astro&quot;&gt;astro.build/blog/astro-410/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;astro&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Astro 4.1 출시.&lt;br&gt;
+dev toolbar에 접근성 audit 추가, &lt;code&gt;client:visible&lt;/code&gt;에 &lt;code&gt;rootMargin&lt;/code&gt; 옵션 추가, Cookie의 Encoding/Decoding 옵션 추가&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-v3-12-0-honojs-hono&quot;&gt;Release v3.12.0 · honojs/hono&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/honojs/hono/releases/tag/v3.12.0&quot; title=&quot;Release v3.12.0 · honojs/hono&quot;&gt;github.com/honojs/hono/releases/tag/v3.12.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Hono v3.12.0 출시.&lt;br&gt;
+Origin 헤더 체크하는 &lt;code&gt;hono/csrf&lt;/code&gt; 추가, 실험적 API로 CSS in JS 인 &lt;code&gt;hono/css&lt;/code&gt; 추가&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-version-23-2-0-jsdom-jsdom&quot;&gt;Release Version 23.2.0 · jsdom/jsdom&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/jsdom/jsdom/releases/tag/23.2.0&quot; title=&quot;Release Version 23.2.0 · jsdom/jsdom&quot;&gt;github.com/jsdom/jsdom/releases/tag/23.2.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;DOM&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;jsdom 23.2.0 출시.&lt;br&gt;
+CSS selector 엔진을 &lt;code&gt;nwsapi&lt;/code&gt;에서 &lt;code&gt;dom-selector&lt;/code&gt;으로 변경.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/asamuzaK/domSelector&quot; title=&quot;asamuzaK/domSelector: A CSS selector engine.&quot;&gt;asamuzaK/domSelector: A CSS selector engine.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/dperini/nwsapi&quot; title=&quot;dperini/nwsapi: Fast CSS Selectors API Engine&quot;&gt;dperini/nwsapi: Fast CSS Selectors API Engine&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;bun-v1-0-22-bun-blog&quot;&gt;Bun v1.0.22 | Bun Blog&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://bun.sh/blog/bun-v1.0.22&quot; title=&quot;Bun v1.0.22 | Bun Blog&quot;&gt;bun.sh/blog/bun-v1.0.22&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Bun&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Bun v1.0.22 출시.&lt;br&gt;
+&lt;code&gt;PerformanceObserver&lt;/code&gt;/&lt;code&gt;performance.mark&lt;/code&gt;/&lt;code&gt;performance.measure&lt;/code&gt; API 구현, Fetch API의 Brotli 지원.&lt;br&gt;
+&lt;code&gt;console.table&lt;/code&gt;에서 EastAsianWidth 대응 개선&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;biome-v1-5-biome&quot;&gt;Biome v1.5 | Biome&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://biomejs.dev/blog/biome-v1-5/&quot; title=&quot;Biome v1.5 | Biome&quot;&gt;biomejs.dev/blog/biome-v1-5/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tools&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Biome v1.5 출시.&lt;br&gt;
+Git 같은 VCS에서 변경된 파일만 다루는 &lt;code&gt;--changed&lt;/code&gt; 플래그 추가, &lt;code&gt;biome ci&lt;/code&gt;으로 GitHub의 Problem Matcher에 맞춘 결과를 보임.&lt;br&gt;
+&lt;code&gt;biome explain&lt;/code&gt; 추가, Lint 규칙 추가&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://zenn.dev/cybozu_frontend/articles/biome-roadmap-2024&quot; title=&quot;Biome 2024년 로드맵 공개와 v1.5.0 출시&quot;&gt;Biome 2024년 로드맵 공개와 v1.5.0 출시&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;node-v20-11-0-lts-node-js&quot;&gt;Node v20.11.0 (LTS) | Node.js&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://nodejs.org/en/blog/release/v20.11.0&quot; title=&quot;Node v20.11.0 (LTS) | Node.js&quot;&gt;nodejs.org/en/blog/release/v20.11.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;nodejs&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Node.js v20.11.0 출시.&lt;br&gt;
+&lt;code&gt;import.meta.dirname&lt;/code&gt;/&lt;code&gt;import.meta.filename&lt;/code&gt; 추가, &lt;code&gt;--disable-warning&lt;/code&gt; 플래그 추가, Stream 성능 개선&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-v13-0-0-capricorn86-happy-dom&quot;&gt;Release v13.0.0 · capricorn86/happy-dom&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/capricorn86/happy-dom/releases/tag/v13.0.0&quot; title=&quot;Release v13.0.0 · capricorn86/happy-dom&quot;&gt;github.com/capricorn86/happy-dom/releases/tag/v13.0.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;DOM&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Happy DOM v13.0.0 출시.&lt;br&gt;
+Internal한 API를 Symbol로 사용함으로 직접 접근하지 못하게 변경, CORS의 preflight 대응 개선, &lt;code&gt;window.open()&lt;/code&gt;/&lt;code&gt;window.close()&lt;/code&gt; 구현&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;rspack-0-5-release-announcement-rspack&quot;&gt;Rspack 0.5 Release Announcement - Rspack&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.rspack.dev/blog/announcing-0.5.html&quot; title=&quot;Rspack 0.5 Release Announcement - Rspack&quot;&gt;www.rspack.dev/blog/announcing-0.5.html&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;bundler&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Rspack 0.5 출시.&lt;br&gt;
+Module Federation의 지원, 빌트인 정의함으로 기본값 변환(js이나 ts)을 삭제하고 유저가 정의하도록 변경.&lt;br&gt;
+&lt;code&gt;resolve.exntesions&lt;/code&gt; 기본값에서 &lt;code&gt;.ts&lt;/code&gt;이나 &lt;code&gt;.tsx&lt;/code&gt; 삭제, Deprecated였던 &lt;code&gt;builtins.*&lt;/code&gt; 옵션이나 loader 삭제&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;읽을거리&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;more-than-you-need-to-know-about-reactdom-flushsync-julesblom-com&quot;&gt;More Than You Need to Know About ReactDOM.flushSync | JulesBlom.com&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://julesblom.com/writing/flushsync&quot; title=&quot;More Than You Need to Know About ReactDOM.flushSync | JulesBlom.com&quot;&gt;julesblom.com/writing/flushsync&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;React의 &lt;code&gt;ReactDOM.flushSync&lt;/code&gt;에 대해.&lt;br&gt;
+React는 기본값으로 상태 변경하면 한 번에 렌더링하지만, &lt;code&gt;flushSync&lt;/code&gt;는 상태 갱신을 바로 렌더링한다는 사실에 대해&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;도서&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;ddd-typescript&quot;&gt;【DDD 입문】TypeScript × 도메인 주도 설계 핸즈온&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://zenn.dev/yamachan0625/books/ddd-hands-on&quot; title=&quot;【DDD 입문】TypeScript × 도메인 주도 설계 핸즈온&quot;&gt;zenn.dev/yamachan0625/books/ddd-hands-on&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;DDD&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;TypeScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;book&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;DDD의 도메인 모델링이나 구현 방법에 대해 튜토리얼로 살펴봄.&lt;br&gt;
+이벤트 스트리밍에서 도메인 모델링, PlantUML 사용한 모델도 관리, TypeScript 사용한 구현에 대해 소개&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;amazon-co-jp-html-css-javascript-ebook&quot;&gt;Amazon.co.jp: 프론트엔드 지식지도 ㅡ 한 권으로 HTML/CSS/JavaScript 개발기술을 배우는 책 eBook&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.amazon.co.jp/dp/B0CMCWZRP2/&quot; title=&quot;Amazon.co.jp: 프론트엔드 지식지도 ㅡ 한 권으로 HTML/CSS/JavaScript 개발기술을 배우는 책 eBook&quot;&gt;www.amazon.co.jp/dp/B0CMCWZRP2/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;HTML&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;CSS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;book&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;HTML/CSS/JavaScript 프론트엔드에 대한 책&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;the-chibivue-book-the-chibivue-book&quot;&gt;The chibivue Book | The chibivue Book&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ubugeeei.github.io/chibivue/&quot; title=&quot;The chibivue Book | The chibivue Book&quot;&gt;ubugeeei.github.io/chibivue/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Vue&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;book&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;tutorial&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Vue 구조를 구현하면서, Virtual DOM/Reactivity System/Template Compiler/Single File Component를 보는 웹사이트.&lt;/p&gt;
+
+&lt;hr&gt;
+</description>
+        <pubDate>Thu, 11 Jan 2024 12:42:47 +0900</pubDate>
+        <link>https://jser.info/ko/2024/01/11/biome-v1.5-node.js-v20.11.0-rspack-0.5/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2024/01/11/biome-v1.5-node.js-v20.11.0-rspack-0.5/</guid>
+        
+        <category>book</category>
+        
+        <category>Bun</category>
+        
+        <category>DOM</category>
+        
+        <category>Chrome</category>
+        
+        <category>privacy</category>
+        
+        
+        <category>JSer</category>
+        
+      </item>
+    
+      <item>
+        <title>2024-01-02: Vue 3.4, Vue 2.x의 EOL, quick-lint-js 3.0.0, Astro와 Deno 2023년 정리하기</title>
+        <description>&lt;p&gt;JSer.info #675 - Vue 3.4 가 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://blog.vuejs.org/posts/vue-3-4&quot;&gt;Announcing Vue 3.4 | The Vue Point&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Vue 3.4에서는 Vue 템플릿 파서 성능 개선, &lt;code&gt;watchEffect&lt;/code&gt; 개선, &lt;code&gt;defineModel&lt;/code&gt;가 Stable API으로 변경되었어요.&lt;br&gt;
+또한, &lt;code&gt;v-bind&lt;/code&gt;가 이름이 같으면 생략 가능하도록, Hydration 에러 표시 개선이 있었어요.&lt;br&gt;
+파괴적 변경으로, global &lt;code&gt;JSX&lt;/code&gt; namespace 자료형 정의하지 않도록 변경, 실험적 기능이었던 Reactivity Transform 삭제도 있어요.&lt;/p&gt;
+
+&lt;p&gt;Vue 2.x 는 2023년 12월 31일 지원 종료되어, End of Life(EOL) 되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://v2.vuejs.org/eol/&quot;&gt;Vue 2 Has Reached End of Life&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;최종 버전은 2.7.16 이에요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/vuejs/vue/releases/tag/v2.7.16&quot;&gt;Release v2.7.16 &amp;quot;Swan Song&amp;quot; · vuejs/vue&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;C++로 작성된 JavaScript의 Lint 도구 Quick-lint-js 3.0.0가 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://quick-lint-js.com/blog/version-3.0/&quot;&gt;TypeScript Clearly &amp;amp; Quickly&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/quick-lint/quick-lint-js/releases/tag/3.0.0&quot;&gt;Release 3.0.0 (2024-01-01) · quick-lint/quick-lint-js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Quick-lint-js 3.0.0은, TypeScript 지원돼요&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;다음 글에는, 2023년 Astro와 Deno 주요 변경점이 정리되어 있어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://zenn.dev/morinokami/articles/astro-2023-2024&quot;&gt;Astro 가는 해 오는 해&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://zenn.dev/uki00a/articles/whats-new-for-deno-in-2023&quot;&gt;2023년 Deno의 변경점과 이룬 것 정리&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;주요한 변경 점이나 앞으로의 변경은 추후에 작성할 예정이므로, 관심있으시면 읽어주세요.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h3 class=&quot;inline-support&quot;&gt;To support JSer.info&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;😘 Recommend JSer.info to your friends!&lt;/li&gt;
+    &lt;li&gt;❤️ Support &lt;a href=&quot;https://github.com/sponsors/azu&quot;&gt;@azu on GitHub Sponsors&lt;/a&gt;/&lt;a
+            href=&quot;https://jser.info/sponsor/&quot;&gt;JSer.info Sponsors&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;🐦 Follow &lt;a href=&quot;https://twitter.com/jser_info&quot;&gt;@jser_info on X(Twitter)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;헤드라인&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-v8-13-1-pnpm-pnpm&quot;&gt;Release v8.13.1 · pnpm/pnpm&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/pnpm/pnpm/releases/tag/v8.13.1&quot; title=&quot;Release v8.13.1 · pnpm/pnpm&quot;&gt;github.com/pnpm/pnpm/releases/tag/v8.13.1&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;pnpm&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;pnpm v8.13.1 출시.&lt;br&gt;
+&lt;code&gt;pnpm cat-index&lt;/code&gt;/&lt;code&gt;pnpm cat-file&lt;/code&gt;/&lt;code&gt;pnpm find-hash&lt;/code&gt; 명렁어 추가&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;moment-changelog-md-at-develop-moment-moment&quot;&gt;moment/CHANGELOG.md at develop · moment/moment&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/moment/moment/blob/develop/CHANGELOG.md#2300-full-changelog&quot; title=&quot;moment/CHANGELOG.md at develop · moment/moment&quot;&gt;github.com/moment/moment/blob/develop/CHANGELOG.md#2300-full-changelog&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;moment 2.30.0 출시.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://gist.github.com/ichernev/e277bcd1f0eeabb834f60a777237925a&quot; title=&quot;moment-2.30.0.md&quot;&gt;moment-2.30.0.md&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-3-35-0-2023-12-29-zloirock-core-js&quot;&gt;Release 3.35.0 - 2023.12.29 · zloirock/core-js&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/zloirock/core-js/releases/tag/v3.35.0&quot; title=&quot;Release 3.35.0 - 2023.12.29 · zloirock/core-js&quot;&gt;github.com/zloirock/core-js/releases/tag/v3.35.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;polyfill&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;core-js v3.35.0 출시.&lt;br&gt;
+&lt;code&gt;{ Map, Set, WeakMap, WeakSet }.{ from, of }&lt;/code&gt;의 &lt;code&gt;this&lt;/code&gt; 관련한 동작 변경&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;announcing-vue-3-4-the-vue-point&quot;&gt;Announcing Vue 3.4 | The Vue Point&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.vuejs.org/posts/vue-3-4&quot; title=&quot;Announcing Vue 3.4 | The Vue Point&quot;&gt;blog.vuejs.org/posts/vue-3-4&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Vue&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Vue 3.4 출시.&lt;br&gt;
+Vue 템플릿 파서 성능 개선, &lt;code&gt;watchEffect&lt;/code&gt; 개선, &lt;code&gt;defineModel&lt;/code&gt;를 Stable API으로 변경.&lt;br&gt;
+&lt;code&gt;v-bind&lt;/code&gt;가 같은 이름일 때 생략 가능, Hydration 에러 게시 개선.&lt;br&gt;
+global &lt;code&gt;JSX&lt;/code&gt; namespace 자료형 정의하지 않도록 변경, 실험적 기능이었던 Reactivity Transform 삭제&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;vue-js&quot;&gt;Vue.js&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://v2.vuejs.org/eol/&quot; title=&quot;Vue.js&quot;&gt;v2.vuejs.org/eol/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Vue&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;news&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Vue 2은 2023년 12월 31일로 End of Life (EOL), 지원 종료.&lt;br&gt;
+최종 버전은 2.7.16&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;typescript-clearly-quickly&quot;&gt;TypeScript Clearly &amp;amp; Quickly&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://quick-lint-js.com/blog/version-3.0/&quot; title=&quot;TypeScript Clearly &amp;amp;amp; Quickly&quot;&gt;quick-lint-js.com/blog/version-3.0/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;TypeScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ESLint&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Quick-lint-js 3.0 출시.&lt;br&gt;
+TypeScript의 Lint 지원, JSX의 Lint 개선&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/quick-lint/quick-lint-js/releases/tag/3.0.0&quot; title=&quot;Release 3.0.0 (2024-01-01) · quick-lint/quick-lint-js&quot;&gt;Release 3.0.0 (2024-01-01) · quick-lint/quick-lint-js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;읽을거리&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;next-js-4-postd&quot;&gt;Next.js를 4년간 사용하면서 깨달음, 엔터프라이즈 애플리케이션의 프론트엔드 개발 및 구축 | POSTD&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://postd.cc/how-i-approach-and-structure-enterprise-frontend-applications-after-4-years-of-using-nextjs/&quot; title=&quot;Next.js를 4년간 사용하면서 깨달음, 엔터프라이즈 애플리케이션의 프론트엔드 개발 및 구축 | POSTD&quot;&gt;postd.cc/how-i-approach-and-structure-enterprise-frontend-applications-after-4-years-of-using-nextjs/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Next.js&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;translate&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Next.js의 Pages Router에서 애플리케이션 아키텍처 관련하여.&lt;br&gt;
+Next.js 폴더 구조, 도구, 코딩 스타일에 대하여&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;web-performance-calendar-measuring-monitoring-and-optimizing-ttfb-with-server-timing&quot;&gt;Web Performance Calendar » Measuring, monitoring and optimizing TTFB with Server timing&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://calendar.perfplanet.com/2023/ttfb-server-timing-measuring-monitoring-optimizing/&quot; title=&quot;Web Performance Calendar » Measuring, monitoring and optimizing TTFB with Server timing&quot;&gt;calendar.perfplanet.com/2023/ttfb-server-timing-measuring-monitoring-optimizing/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;performance&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Server-Timing&lt;/code&gt; HTTP Response Header에 대하여.&lt;br&gt;
+&lt;code&gt;Server-Timing&lt;/code&gt;의 포맷, Node.js에서의 response 예시&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;web-performance-calendar-digging-through-chrome-traces-an-introduction-with-an-example&quot;&gt;Web Performance Calendar » Digging through Chrome traces: an introduction with an example&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://calendar.perfplanet.com/2023/digging-chrome-traces-introduction-example/&quot; title=&quot;Web Performance Calendar » Digging through Chrome traces: an introduction with an example&quot;&gt;calendar.perfplanet.com/2023/digging-chrome-traces-introduction-example/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Chrome&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;performance&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Chrome의 Trace 관련하여.&lt;br&gt;
+DevTools는 현재 탭 데이터 뿐이지만, Chrom 전체 trace를 확인 가능한 &lt;code&gt;chrome://tracing&lt;/code&gt;에 대해 다룸.&lt;br&gt;
+DevTools 성능 판넬과 trace 사용 구분하기, trace 파일의 포맷, trace와 크롬 코드베이스의 상호작용 확인하는 방법에 대하여.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;sveltekit&quot;&gt;SvelteKit 은 어떤 식으로 컴파일되는가?&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.osstech.co.jp/posts/2023/11/how-sveltekit-compiles/&quot; title=&quot;SvelteKit 은 어떤 식으로 컴파일되는가?&quot;&gt;blog.osstech.co.jp/posts/2023/11/how-sveltekit-compiles/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Svelte&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;vite&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;SvelteKit 컴파일하는 vite-plugin-svelte와 Vite 관련하여.&lt;br&gt;
+&lt;code&gt;/__inspect/&lt;/code&gt;에서의 컴파일 확인 방법, Vite에 대해.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;astro&quot;&gt;Astro 가는 해 오는 해&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://zenn.dev/morinokami/articles/astro-2023-2024&quot; title=&quot;Astro 가는 해 오는 해&quot;&gt;zenn.dev/morinokami/articles/astro-2023-2024&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;astro&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Astro의 2023년 주요 변경점 정리.&lt;br&gt;
+Content Collections, Hybrid Rendering, Middleware, Custom Client Directives,  Page Partials, Dev Toolbar.&lt;br&gt;
+또한 관련 프로젝트에 대하여&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;2023-deno&quot;&gt;2023년 Deno의 주요 변경점과 이룬 것 정리&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://zenn.dev/uki00a/articles/whats-new-for-deno-in-2023&quot; title=&quot;2023년 Deno의 주요 변경점과 이룬 것 정리&quot;&gt;zenn.dev/uki00a/articles/whats-new-for-deno-in-2023&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;deno&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;2023년 Deno의 주요 변경점과 이룬 것에 대해.&lt;br&gt;
+Node.js 호환성 개선, &lt;code&gt;deno.json&lt;/code&gt; 옵션 추가, Deno KV/Queues/Cron 추가, 실험적으로 패키지 매니저 구현, &lt;code&gt;deno jupyter&lt;/code&gt; 명령어 추가.&lt;br&gt;
+또한, &lt;code&gt;deno_std&lt;/code&gt;의 v1 출시하기 위한 모듈 삭제 및 구조 변경에 대하여&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;소프트웨어, 도구, 라이브러리&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;speed-highlight-core-light-fast-and-easy-to-use-dependencies-free-javascript-syntax-highlighter-with-automatic-language-detection&quot;&gt;speed-highlight/core: 🌈 Light, fast, and easy to use, dependencies free javascript syntax highlighter, with automatic language detection&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/speed-highlight/core&quot; title=&quot;speed-highlight/core: 🌈 Light, fast, and easy to use, dependencies free javascript syntax highlighter, with automatic language detection&quot;&gt;github.com/speed-highlight/core&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;자동적으로 언어를 판단하는 기능이 있는 syntax highlighter&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;pagefind-pagefind-static-low-bandwidth-search-at-scale&quot;&gt;Pagefind | Pagefind — Static low-bandwidth search at scale&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pagefind.app/&quot; title=&quot;Pagefind | Pagefind — Static low-bandwidth search at scale&quot;&gt;pagefind.app/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Rust&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;search&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;nodejs&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;정적 사이트를 대상으로 하는 전문 검색 엔진과 UI 라이브러리.&lt;br&gt;
+검색 인덱스를 chunk에 나눠서 작성, 브라우저가 얻는 인덱스도 필요한 부분만 읽으므로, 큰 사이트여도 전송량을 자잘하게 유지하는 구조를 갖고 있음.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;도서&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;tailwind-css&quot;&gt;Tailwind CSS 실전입문：도서안내｜기술평론사&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gihyo.jp/book/2024/978-4-297-13943-8&quot; title=&quot;Tailwind CSS 실전입문：도서안내｜기술평론사&quot;&gt;gihyo.jp/book/2024/978-4-297-13943-8&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;CSS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;book&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;2024년 1월 26일 발매&lt;br&gt;
+Tailwind CSS 관련한 도서&lt;/p&gt;
+
+&lt;hr&gt;
+</description>
+        <pubDate>Tue, 02 Jan 2024 10:21:04 +0900</pubDate>
+        <link>https://jser.info/ko/2024/01/02/vue-3.4-vue-2.xeol-quick-lint-js-3.0.0-astrodeno2023/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2024/01/02/vue-3.4-vue-2.xeol-quick-lint-js-3.0.0-astrodeno2023/</guid>
+        
+        <category>Vue</category>
+        
+        <category>performance</category>
+        
+        <category>CSS</category>
+        
+        <category>book</category>
+        
+        <category>pnpm</category>
+        
+        
+        <category>JSer</category>
+        
+      </item>
+    
+      <item>
+        <title>2023-12-23: date-fns 3.0.0, Firefox 121, React Aria Components 1.0.0, Catalyst</title>
+        <description>&lt;p&gt;JSer.info #674 - date-fns v3.0.0가 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/date-fns/date-fns/releases/tag/v3.0.0&quot;&gt;Release v3.0.0 · date-fns/date-fns&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ESM와 CJS dual pacakge로 변경, 각 파일은 named export 하도록 변경되었어요.&lt;br&gt;
+TypeScript 자료형 개선과 함께, 인수의 개수를 Runtime Check 없게하고 Type Check만 하도록 변경되었어요.&lt;br&gt;
+그 외로는, interval 옵션 negative 지원, IE의 지원 종료도 포함되어 있어요.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Firefox 121가 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.mozilla.org/en-US/firefox/121.0/releasenotes/&quot;&gt;Firefox 121.0, See All New Features, Updates and Fixes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/121&quot;&gt;Firefox 121 for developers - Mozilla | MDN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;iframe loading=lazy&amp;gt;&lt;/code&gt;의 지원, CSS &lt;code&gt;text-wrap: balance&lt;/code&gt;, &lt;code&gt;:has()&lt;/code&gt;, &lt;code&gt;text-indent: each-ilne&lt;/code&gt;의 지원이 있어요.&lt;br&gt;
+ES2024의 &lt;code&gt;Promise.withResolvers()&lt;/code&gt; 지원, &lt;code&gt;Date.parse()&lt;/code&gt;으로 파싱 가능한 포맷 추가.&lt;br&gt;
+실험적 기능으로 Custom Element &lt;code&gt;state&lt;/code&gt; 프로퍼티 지원, &lt;code&gt;showPicker()&lt;/code&gt; 지원도 있어요.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;React Aria Components v1가 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://react-spectrum.adobe.com/releases/2023-12-20.html&quot;&gt;December 20, 2023 Release – React Spectrum Releases&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://react-spectrum.adobe.com/react-aria/index.html&quot;&gt;React Aria&lt;/a&gt; 공식 사이트가 이 출시에 맞춰 업데이트되어, 각 컴포넌트를 테스트할 수 있어요.&lt;br&gt;
+또한, Starter Kit으로 복사해서 이용 가능한 템플릿도 공개되었어요.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h3 class=&quot;inline-support&quot;&gt;To support JSer.info&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;😘 Recommend JSer.info to your friends!&lt;/li&gt;
+    &lt;li&gt;❤️ Support &lt;a href=&quot;https://github.com/sponsors/azu&quot;&gt;@azu on GitHub Sponsors&lt;/a&gt;/&lt;a
+            href=&quot;https://jser.info/sponsor/&quot;&gt;JSer.info Sponsors&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;🐦 Follow &lt;a href=&quot;https://twitter.com/jser_info&quot;&gt;@jser_info on X(Twitter)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;헤드라인&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-v3-0-0-date-fns-date-fns&quot;&gt;Release v3.0.0 · date-fns/date-fns&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/date-fns/date-fns/releases/tag/v3.0.0&quot; title=&quot;Release v3.0.0 · date-fns/date-fns&quot;&gt;github.com/date-fns/date-fns/releases/tag/v3.0.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;date-fns v3.0.0 출시.&lt;br&gt;
+ESM와 CJS dual pacakge로 변경, 각 파일은 named export 하도록 변경. TypeScript 자료형 개선, 인수 개수 Runtime Check 없이 Type Check 만으로 변경, negative interval 지원, IE의 지원 종료&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;firefox-121-0-see-all-new-features-updates-and-fixes&quot;&gt;Firefox 121.0, See All New Features, Updates and Fixes&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.mozilla.org/en-US/firefox/121.0/releasenotes/&quot; title=&quot;Firefox 121.0, See All New Features, Updates and Fixes&quot;&gt;www.mozilla.org/en-US/firefox/121.0/releasenotes/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Firefox&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Firefox 121 출시.&lt;br&gt;
+&lt;code&gt;&amp;lt;iframe loading=lazy&amp;gt;&lt;/code&gt;의 지원, CSS &lt;code&gt;text-wrap: balance&lt;/code&gt;, &lt;code&gt;:has()&lt;/code&gt;, &lt;code&gt;text-indent: each-ilne&lt;/code&gt;의 지원.&lt;br&gt;
+ES2024 &lt;code&gt;Promise.withResolvers()&lt;/code&gt;의 지원, &lt;code&gt;Date.parse()&lt;/code&gt;으로 파싱 가능한 포맷 추가.&lt;br&gt;
+실험적 기능으로 Custom Element &lt;code&gt;state&lt;/code&gt; 프로퍼티 지원, &lt;code&gt;showPicker()&lt;/code&gt; 지원&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/121&quot; title=&quot;Firefox 121 for developers - Mozilla | MDN&quot;&gt;Firefox 121 for developers - Mozilla | MDN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;tailwind-css-v3-4-dynamic-viewport-units-has-support-balanced-headlines-subgrid-and-more-tailwind-css&quot;&gt;Tailwind CSS v3.4: Dynamic viewport units, :has() support, balanced headlines, subgrid, and more - Tailwind CSS&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://tailwindcss.com/blog/tailwindcss-v3-4&quot; title=&quot;Tailwind CSS v3.4: Dynamic viewport units, :has() support, balanced headlines, subgrid, and more - Tailwind CSS&quot;&gt;tailwindcss.com/blog/tailwindcss-v3-4&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;CSS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Tailwind CSS v3.4 출시.&lt;br&gt;
+Dynamic viewport units의 지원, &lt;code&gt;:has()&lt;/code&gt;의 지원, &lt;code&gt;*&lt;/code&gt; variant 지원, &lt;code&gt;size-*&lt;/code&gt; utility 지원, Sub grid 지원&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;december-20-2023-release-react-spectrum-releases&quot;&gt;December 20, 2023 Release – React Spectrum Releases&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://react-spectrum.adobe.com/releases/2023-12-20.html&quot; title=&quot;December 20, 2023 Release – React Spectrum Releases&quot;&gt;react-spectrum.adobe.com/releases/2023-12-20.html&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;React Aria Components v1 출시.&lt;br&gt;
+React Aria 설명하는 Landing Page 공개, Storybook이나 스타일을 포함하는 Starter Kit 공개&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://react-spectrum.adobe.com/react-aria/index.html&quot; title=&quot;React Aria&quot;&gt;React Aria&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://react-spectrum.adobe.com/react-aria/getting-started.html#starter-kit&quot; title=&quot;Getting Started – React Aria&quot;&gt;Getting Started – React Aria&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;introducing-catalyst-a-modern-ui-kit-for-react-tailwind-css&quot;&gt;Introducing Catalyst: A modern UI kit for React - Tailwind CSS&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://tailwindcss.com/blog/introducing-catalyst&quot; title=&quot;Introducing Catalyst: A modern UI kit for React - Tailwind CSS&quot;&gt;tailwindcss.com/blog/introducing-catalyst&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;UI&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;CSS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Tailwind UI Kit인 Catalyst 출시.&lt;br&gt;
+스타일 포함하는 컴포넌트를 복사해서 사용하는 유료 React 컴포넌트 모음.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://tailwindui.com/templates/catalyst&quot; title=&quot;Catalyst - Tailwind CSS Application UI Kit&quot;&gt;Catalyst - Tailwind CSS Application UI Kit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;bun-v1-0-19-bun-blog&quot;&gt;Bun v1.0.19 | Bun Blog&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://bun.sh/blog/bun-v1.0.19&quot; title=&quot;Bun v1.0.19 | Bun Blog&quot;&gt;bun.sh/blog/bun-v1.0.19&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Bun&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;TypeScript&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Bun v1.0.19 출시.&lt;br&gt;
+&lt;code&gt;bun-types&lt;/code&gt;에는 여러 문제가 있었기에 &lt;code&gt;@types/bun&lt;/code&gt;으로 변경, &lt;code&gt;setTimeout&lt;/code&gt;/&lt;code&gt;setInterval&lt;/code&gt; 성능 개선&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;읽을거리&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;node-js-v21&quot;&gt;Node.js v21 주요 변경점 - 딱히 재미없지는 않은 블로그&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://shisama.hatenablog.com/entry/2023/12/16/151553&quot; title=&quot;Node.js v21 주요 변경점 - 딱히 재미없지는 않은 블로그&quot;&gt;shisama.hatenablog.com/entry/2023/12/16/151553&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;nodejs&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Node.js v21 변경점에 대하여.&lt;br&gt;
+Fetch와 WebStreams의 Stable화, WebSocket 추가, &lt;code&gt;navigator.language&lt;/code&gt;/&lt;code&gt;navigator.languages&lt;/code&gt; 추가, ESM 기본값 관련한 플래그 추가.&lt;br&gt;
+&lt;code&gt;import.meta.dirname&lt;/code&gt;/&lt;code&gt;import.meta.filename&lt;/code&gt; 추가, Test Runner의 glob 지정에 대응, &lt;code&gt;--disable-warning&lt;/code&gt; 플래그 추가&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;from-css-madness-to-css-hooks-nsaunders-dev&quot;&gt;From CSS madness to CSS Hooks — nsaunders.dev&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://nsaunders.dev/posts/css-madness-to-hooks&quot; title=&quot;From CSS madness to CSS Hooks — nsaunders.dev&quot;&gt;nsaunders.dev/posts/css-madness-to-hooks&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;CSS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;CSS Hooks에 사용되고 있는 CSS Variables를 사용한 fallback trick에 대하여.&lt;br&gt;
+CSS Variables에 &lt;code&gt;initial&lt;/code&gt;이 지정되어 있는 경우는 fallback이 사용되고, 빈 값일 경우에는 빈 값을 사용.&lt;br&gt;
+이 특성을 사용함으로, CSS만으로 프로그램 가능한 스타일 토글 구현 가능.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://css-hooks.com/&quot; title=&quot;CSS Hooks&quot;&gt;CSS Hooks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;getting-started-with-web-performance-htmhell&quot;&gt;Getting started with Web Performance 🚀 - HTMHell&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.htmhell.dev/adventcalendar/2023/14/&quot; title=&quot;Getting started with Web Performance 🚀 - HTMHell&quot;&gt;www.htmhell.dev/adventcalendar/2023/14/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;performance&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;웹 성능 입문 글.&lt;br&gt;
+왜 성능이 중요한가, Core Web Vitals이나 LCP/INP/CLS 같은 메트릭스가 어떤 상태를 계측하는가 설명.&lt;br&gt;
+성능 계측하는 방법과 도구, 개선 Tips 등&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;웹사이트, 서비스, 문서&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;ts-docs-reference-docs-for-npm-packages&quot;&gt;TS Docs | Reference docs for npm packages&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://tsdocs.dev/&quot; title=&quot;TS Docs | Reference docs for npm packages&quot;&gt;tsdocs.dev/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;TypeScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;document&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;webservice&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;npm 패키지 자료형 정보에서 typedoc 보이도록 하는 서비스.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;소프트웨어, 도구, 라이브러리&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;webui-dev-webui-use-any-web-browser-as-gui-with-your-preferred-language-in-the-backend-and-html5-in-the-frontend-all-in-a-lightweight-portable-lib&quot;&gt;webui-dev/webui: Use any web browser as GUI, with your preferred language in the backend and HTML5 in the frontend, all in a lightweight portable lib.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/webui-dev/webui&quot; title=&quot;webui-dev/webui: Use any web browser as GUI, with your preferred language in the backend and HTML5 in the frontend, all in a lightweight portable lib.&quot;&gt;github.com/webui-dev/webui&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;webview&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;browser&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;software&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;브라우저나 WebView를 GUI으로 사용해, 백엔드를 임의 언어로 작성하는 데스크탑 애플리케이션 도구.&lt;br&gt;
+백엔드에서 브라우저 윈도우 조작이나 브라우저와 상호작용하는 SDK가 여러 언어로 준비되어 있음&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;movies-app&quot;&gt;Movies App&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://tastejs.com/movies/&quot; title=&quot;Movies App&quot;&gt;tastejs.com/movies/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;example&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Next.js/Angular/NuxtJS/Astro/SolidJS/Svelte/Enhance/qwik/Lit 등의 프레임워크에서 똑같은 영화 정보 애플리케이션을 만들고 비교한 웹사이트.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 23 Dec 2023 20:57:59 +0900</pubDate>
+        <link>https://jser.info/ko/2023/12/23/date-fns-3.0.0-firefox-121-react-aria-components-1.0.0-catalyst/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2023/12/23/date-fns-3.0.0-firefox-121-react-aria-components-1.0.0-catalyst/</guid>
+        
+        <category>CSS</category>
+        
+        <category>React</category>
+        
+        <category>TypeScript</category>
+        
+        <category>example</category>
+        
+        <category>Firefox</category>
+        
+        
+        <category>JSer</category>
+        
+      </item>
+    
+      <item>
+        <title>2023-12-15: Safari 17.2, Deno 1.39(WebGPU), SvelteKit 2</title>
+        <description>&lt;p&gt;JSer.info #673 - Safari 17.2가 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.webkit.org/blog/14787/webkit-features-in-safari-17-2/&quot;&gt;WebKit Features in Safari 17.2 | WebKit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;여러 변경이 있어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;HTML, &lt;code&gt;&amp;lt;detail name&amp;gt;&lt;/code&gt; 지원, &lt;code&gt;&amp;lt;input autocomplete=&amp;quot;one-time-code&amp;quot;&amp;gt;&lt;/code&gt; 지원&lt;/li&gt;
+&lt;li&gt;CSS, Nesting 규칙 완화, &lt;code&gt;cap&lt;/code&gt; unit, &lt;code&gt;rem()&lt;/code&gt;/&lt;code&gt;mod()&lt;/code&gt;/&lt;code&gt;round()&lt;/code&gt; 추가, &lt;code&gt;mask-border&lt;/code&gt; 지원, Custom Highlight API 지원&lt;/li&gt;
+&lt;li&gt;JavaScript, Import attributes 지원&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;그 외, &lt;code&gt;&amp;lt;link rel=preload&amp;gt;&lt;/code&gt;에서 &lt;code&gt;imagesizes&lt;/code&gt;/&lt;code&gt;imagesrcset&lt;/code&gt; 속성으로 responsive image 지원.&lt;br&gt;
+SVG 이미지, &lt;code&gt;&amp;lt;image crossorigin&amp;gt;&lt;/code&gt;로 읽을 때 CORS 고려해서 다루도록 됨, &lt;br&gt;
+Fetch Priority 지원, HTML Form의 &lt;code&gt;form.reportValidity()&lt;/code&gt; API 지원도 있어요.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Deno 1.39가 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://deno.com/blog/v1.39&quot;&gt;Deno 1.39: The Return of WebGPU&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;WebGPU API 재도입, &lt;code&gt;deno coverage --html&lt;/code&gt;에서 HTML 커버리지 리포트 보이도록, &lt;code&gt;deno compile&lt;/code&gt; 개선.&lt;br&gt;
+&lt;code&gt;deno task&lt;/code&gt;에서 &lt;code&gt;node_modules/.bin/&lt;/code&gt;으로 PATH 사용하도록, &lt;code&gt;Object.prototype.__proto__&lt;/code&gt;를 유효화하는 &lt;code&gt;--unstable-unsafe-proto&lt;/code&gt; 플래그 추가.&lt;br&gt;
+그 외, Jest의 expect 호환 &lt;code&gt;std/expect&lt;/code&gt; 추가, 커맨드라인 인수 파싱하는 &lt;code&gt;std/cli&lt;/code&gt; 추가.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;SvelteKit 2가 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://svelte.dev/blog/sveltekit-2&quot;&gt;Announcing SvelteKit 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;load&lt;/code&gt; 함수에서 Promises 다룰 때 일관성 갖도록, &lt;code&gt;paths.relative&lt;/code&gt; 기본값 &lt;code&gt;true&lt;/code&gt;, &lt;code&gt;dangerZone.trackServerFetches&lt;/code&gt; 삭제.&lt;/p&gt;
+
+&lt;p&gt;다음 커맨드 라인으로 이행 가능, 이행 가이드도 공개.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-&quot; data-lang=&quot;&quot;&gt;$ npx svelte-migrate sveltekit-2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://kit.svelte.dev/docs/migrating-to-sveltekit-2&quot;&gt;Migrating to SvelteKit v2 • Docs • SvelteKit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h3 class=&quot;inline-support&quot;&gt;To support JSer.info&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;😘 Recommend JSer.info to your friends!&lt;/li&gt;
+    &lt;li&gt;❤️ Support &lt;a href=&quot;https://github.com/sponsors/azu&quot;&gt;@azu on GitHub Sponsors&lt;/a&gt;/&lt;a
+            href=&quot;https://jser.info/sponsor/&quot;&gt;JSer.info Sponsors&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;🐦 Follow &lt;a href=&quot;https://twitter.com/jser_info&quot;&gt;@jser_info on X(Twitter)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;헤드라인&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;ecmascript-proposal-updates-2023-11-ecmascript-daily&quot;&gt;ECMAScript proposal updates @ 2023-11 | ECMAScript Daily&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ecmascript-daily.github.io/ecmascript/2023/12/10/ecmascript-proposal-update&quot; title=&quot;ECMAScript proposal updates @ 2023-11 | ECMAScript Daily&quot;&gt;ecmascript-daily.github.io/ecmascript/2023/12/10/ecmascript-proposal-update&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;ECMAScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;proposal&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;news&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;2023-11 TC39 미팅에서 ECMAScript Proposal 상태 변경 모음.&lt;br&gt;
+Array Grouping와 &lt;code&gt;Promise.withResolvers&lt;/code&gt;가 Stage 4 되어서 ES2024에 포함.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;webkit-features-in-safari-17-2-webkit&quot;&gt;WebKit Features in Safari 17.2 | WebKit&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.webkit.org/blog/14787/webkit-features-in-safari-17-2/&quot; title=&quot;WebKit Features in Safari 17.2 | WebKit&quot;&gt;www.webkit.org/blog/14787/webkit-features-in-safari-17-2/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;safari&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Safari 17.2 출시.&lt;br&gt;
+HTML, &lt;code&gt;&amp;lt;detail name&amp;gt;&lt;/code&gt; 지원, &lt;code&gt;&amp;lt;input autocomplete=&amp;quot;one-time-code&amp;quot;&amp;gt;&lt;/code&gt; 지원.&lt;br&gt;
+CSS, Nesting 규칙 완화, &lt;code&gt;cap&lt;/code&gt; unit, &lt;code&gt;rem()&lt;/code&gt;/&lt;code&gt;mod()&lt;/code&gt;/&lt;code&gt;round()&lt;/code&gt; 추가, &lt;code&gt;mask-border&lt;/code&gt; 지원, Custom Highlight API 지원.&lt;br&gt;
+JavaScriptでは, Import attributes 지원.&lt;br&gt;
+그 외, &lt;code&gt;&amp;lt;link rel=preload&amp;gt;&lt;/code&gt;에서 &lt;code&gt;imagesizes&lt;/code&gt;/&lt;code&gt;imagesrcset&lt;/code&gt; 속성으로 responsive image 지원.&lt;br&gt;
+SVG 이미지를 &lt;code&gt;&amp;lt;image crossorigin&amp;gt;&lt;/code&gt;에서 읽을 때 CORS 고려해서 다룸.&lt;br&gt;
+Fetch Priority 지원, HTML Form의 &lt;code&gt;form.reportValidity()&lt;/code&gt; API 지원&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;oxlint-general-availability-the-javascript-oxidation-compiler&quot;&gt;Oxlint General Availability | The JavaScript Oxidation Compiler&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://oxc-project.github.io/blog/2023-12-12-announcing-oxlint.html&quot; title=&quot;Oxlint General Availability | The JavaScript Oxidation Compiler&quot;&gt;oxc-project.github.io/blog/2023-12-12-announcing-oxlint.html&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;ESLint&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Rust&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Oxlint 공개.&lt;br&gt;
+ESLint와 같은 JavaScript, TypeScript Lint 도구.&lt;br&gt;
+좋은 성능 목표로 설계했으며, 여러 ESLint 규칙을 코어에 포함.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;deno-1-39-the-return-of-webgpu&quot;&gt;Deno 1.39: The Return of WebGPU&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://deno.com/blog/v1.39&quot; title=&quot;Deno 1.39: The Return of WebGPU&quot;&gt;deno.com/blog/v1.39&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;deno&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Deno v1.39 출시.&lt;br&gt;
+WebGPU API 재도입, &lt;code&gt;deno coverage --html&lt;/code&gt;에서 HTML 커버리지 리포트 보이도록, &lt;code&gt;deno compile&lt;/code&gt; 개선.&lt;br&gt;
+&lt;code&gt;deno task&lt;/code&gt;에서 &lt;code&gt;node_modules/.bin/&lt;/code&gt;으로 PATH 사용하도록.&lt;br&gt;
+&lt;code&gt;Object.prototype.__proto__&lt;/code&gt; 유효화하는 &lt;code&gt;--unstable-unsafe-proto&lt;/code&gt; 플래그 추가.&lt;br&gt;
+Jest의 expect 호환 &lt;code&gt;std/expect&lt;/code&gt; 추가, 커맨드라인 인수 파싱하는 &lt;code&gt;std/cli&lt;/code&gt; 추가&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;announcing-sveltekit-2&quot;&gt;Announcing SvelteKit 2&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://svelte.dev/blog/sveltekit-2&quot; title=&quot;Announcing SvelteKit 2&quot;&gt;svelte.dev/blog/sveltekit-2&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Svelte&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;SvelteKit 2 출시.&lt;br&gt;
+&lt;code&gt;load&lt;/code&gt; 함수에서 Promises 일관성있게 다루도록, &lt;code&gt;paths.relative&lt;/code&gt; 기본값 &lt;code&gt;true&lt;/code&gt;로 변경, &lt;code&gt;dangerZone.trackServerFetches&lt;/code&gt; 삭제&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://kit.svelte.dev/docs/migrating-to-sveltekit-2&quot; title=&quot;Migrating to SvelteKit v2 • Docs • SvelteKit&quot;&gt;Migrating to SvelteKit v2 • Docs • SvelteKit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/sveltejs/kit/releases/tag/%40sveltejs%2Fkit%402.0.0&quot; title=&quot;Release @sveltejs/kit@2.0.0 · sveltejs/kit&quot;&gt;Release @sveltejs/kit@2.0.0 · sveltejs/kit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;읽을거리&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;npm-install-production&quot;&gt;npm install --production 같은게 너무 많은 문제&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://zenn.dev/zawa_kyo/articles/d671e0935ae0c0&quot; title=&quot;npm install --production 같은게 너무 많은 문제&quot;&gt;zenn.dev/zawa_kyo/articles/d671e0935ae0c0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;npm install --omit=dev&lt;/code&gt;이나 &lt;code&gt;--production&lt;/code&gt;, &lt;code&gt;--inculde&lt;/code&gt; 플래그 관련하여&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;vite-jest-vitest&quot;&gt;Vite는 사용하지 않았지만 Jest를 Vitest로 이행하기&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://zenn.dev/sa2knight/articles/migrating_vitest_from_jest&quot; title=&quot;Vite는 사용하지 않았지만 Jest를 Vitest로 이행하기&quot;&gt;zenn.dev/sa2knight/articles/migrating_vitest_from_jest&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Jest에서 Vitest로 이행하는 방법에 대하여&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;baselines-evolution-on-mdn-mdn-blog&quot;&gt;Baseline&amp;#039;s evolution on MDN | MDN Blog&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/blog/baseline-evolution-on-mdn/&quot; title=&quot;Baseline&amp;amp;#039;s evolution on MDN | MDN Blog&quot;&gt;developer.mozilla.org/en-US/blog/baseline-evolution-on-mdn/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;browser&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;주요 브라우저에서 지원되는가 알기 쉽게 보이는 Baseline에 대해.&lt;br&gt;
+MDN나 caniuse에서의 API 지원 현황 게시에 이용되고 있는 Baseline 정의에 대하여&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://web.dev/blog/baseline2023?hl=en&quot; title=&quot;Baseline 2023  |  web.dev&quot;&gt;Baseline 2023  |  web.dev&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;storybook-for-react-server-components&quot;&gt;Storybook for React Server Components&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://storybook.js.org/blog/storybook-react-server-components/&quot; title=&quot;Storybook for React Server Components&quot;&gt;storybook.js.org/blog/storybook-react-server-components/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;debug&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Storybook의 React Server Components(RSC) 지원에 대하여.&lt;br&gt;
+RSC을 클라이언트 사이드에서 렌더링해서 대응 예정. Storybook 8의 α버전에서 이용 가능하도록.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;9000-pv-pr-times-next-js-pr-times&quot;&gt;【월간 9000만 PV의 PR TIMES】프레스 페이지를 Next.js 이행하며 한 것들 | PR TIMES 개발자 블로그&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developers.prtimes.jp/2023/12/13/replace-press-release-page-with-nextjs/&quot; title=&quot;【월간 9000만 PV의 PR TIMES】프레스 페이지를 Next.js 이행하며 한 것들 | PR TIMES 개발자 블로그&quot;&gt;developers.prtimes.jp/2023/12/13/replace-press-release-page-with-nextjs/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Next.js&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Next.js의 Pages Router로 이행, 캐시 처리는 CDN(Fastly)에 의존.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;1-next-js-app-router&quot;&gt;1년에 걸쳐 Next.js의 app router으로 완전 이행한 이야기&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://zenn.dev/urotea/articles/3fbaa77d77b788&quot; title=&quot;1년에 걸쳐 Next.js의 app router으로 완전 이행한 이야기&quot;&gt;zenn.dev/urotea/articles/3fbaa77d77b788&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Next.js&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;GraphQL&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Next.js의 Pages Router에서 App Router으로의 이행에 대해.&lt;br&gt;
+이행 순서, App Router으로 이행 후 장단점.&lt;br&gt;
+Intercepting Routes에서의 dialog 관리, layout이나 에러 화면 관리, 캐시 문제에 관하여&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;next-js-app-router-remix-com-developers-blog&quot;&gt;잇큐 레스토랑을 Next.js App Router에서 Remix로 환승한 이야기 - 一休.com Developers Blog&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://user-first.ikyu.co.jp/entry/2023/12/15/093427&quot; title=&quot;잇큐 레스토랑을 Next.js App Router에서 Remix로 환승한 이야기 - 一休.com Developers Blog&quot;&gt;user-first.ikyu.co.jp/entry/2023/12/15/093427&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Next.js&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Remix&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Next.js의 App Router에서 Remix Run으로 이행한 이야기.&lt;br&gt;
+Next.js의 App Router에는 Cache-Control를 암묵적으로 변경할 수 없는 문제, Remix에는 Response를 자유롭게 변경 가능한 차이에 대해.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;웹사이트, 서비스, 문서&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;builderio-hydration-overlay-overlay-for-hydration-errors-with-explicit-diff-between-renders&quot;&gt;BuilderIO/hydration-overlay: Overlay for hydration errors with explicit diff between renders.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/BuilderIO/hydration-overlay&quot; title=&quot;BuilderIO/hydration-overlay: Overlay for hydration errors with explicit diff between renders.&quot;&gt;github.com/BuilderIO/hydration-overlay&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;debug&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;React의 Hydration에서 mismatch 에러를 Diff로 보이도록 하는 라이브러리.&lt;br&gt;
+SSR와 CSR 렌더링 결과에 차이가 있는 경우 Hydration 에러의 디버그 이용 가능.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.builder.io/blog/announcing-react-hydration-overlay&quot; title=&quot;Announcing React Hydration Overlay - Easily Squash Hydration Errors&quot;&gt;Announcing React Hydration Overlay - Easily Squash Hydration Errors&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;소프트웨어, 도구, 라이브러리&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;onyx-programming-language&quot;&gt;Onyx Programming Language&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://onyxlang.io/&quot; title=&quot;Onyx Programming Language&quot;&gt;onyxlang.io/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;WebAssembly&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;program&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;WebAssembly으로 컴파일 가능한 언어&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://wasmer.io/posts/onyxlang-powered-by-wasmer&quot; title=&quot;Onyx, a new programming language powered by WebAssembly&quot;&gt;Onyx, a new programming language powered by WebAssembly&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;도서&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;web&quot;&gt;구현으로 한큐에 풀스택 Web 개발 엔지니어 시야와 지식을 넓히는 핸즈온 | 주식회사 오픈톤&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.amazon.co.jp/dp/4798179337/&quot; title=&quot;구현으로 한큐에 풀스택 Web 개발 엔지니어 시야와 지식을 넓히는 핸즈온 | 주식회사 오픈톤&quot;&gt;www.amazon.co.jp/dp/4798179337/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Next.js&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;book&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;2023년 12월 18일 발매&lt;br&gt;
+Next.js와 Django에서 웹 개발 대한 도서.&lt;br&gt;
+샘플 애플리케이션을 통해 웹시스템 개발을 배우는 도서&lt;/p&gt;
+
+&lt;hr&gt;
+</description>
+        <pubDate>Fri, 15 Dec 2023 13:59:54 +0900</pubDate>
+        <link>https://jser.info/ko/2023/12/15/safari-17.2-deno-1.39webgpu-sveltekit-2/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2023/12/15/safari-17.2-deno-1.39webgpu-sveltekit-2/</guid>
+        
+        <category>Next.js</category>
+        
+        <category>React</category>
+        
+        <category>debug</category>
+        
+        <category>python</category>
+        
+        <category>book</category>
+        
+        
+        <category>JSer</category>
+        
+      </item>
+    
+      <item>
+        <title>2023-12-08: Redux 5.0.0, Vitest 1.0.0, Astro 4.0</title>
+        <description>&lt;p&gt;JSer.info #672 - Redux Toolkit v2.0.0에 Redux 5.0.0가 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/reduxjs/redux/releases/tag/v5.0.0&quot;&gt;Release v5.0.0 · reduxjs/redux&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Redux 5.0.0은 TypeScript으로 변경, CJS/ESM의 dual package으로 변경, ES2020 형식 출력하도록 변경.&lt;br&gt;
+또한, &lt;code&gt;createStore&lt;/code&gt; 비권장으로, Redux Toolkit으로 이행 권장있어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/reduxjs/redux-toolkit/releases/tag/v2.0.0&quot;&gt;Release v2.0.0 · reduxjs/redux-toolkit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;동시에 출시된 Redux Toolkit v2.0.0에는, Redux v5/Reselect 5.0으로 업데이트, &lt;code&gt;createReducer&lt;/code&gt;/&lt;code&gt;createSlice&lt;/code&gt;의 &lt;code&gt;extraReducers&lt;/code&gt; 객체 구문 지원 삭제가 있어요.&lt;br&gt;
+그 밖에는, &lt;code&gt;middleware&lt;/code&gt; 옵션이 배열이 아닌 콜백 함수만 받도록 변경, 자료형 정의 변경이 있어요.&lt;/p&gt;
+
+&lt;p&gt;이행 가이드도 함꼐 공개되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://redux.js.org/usage/migrations/migrating-rtk-2&quot;&gt;Migrating to RTK 2.0 and Redux 5.0 | Redux&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Vite 사용한 테스트 프레임워크 Vitest 1.0.0가 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/vitest-dev/vitest/releases/tag/v1.0.0&quot;&gt;Release v1.0.0 · vitest-dev/vitest&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://vitejs.dev/blog/announcing-vite5&quot;&gt;Vite 5&lt;/a&gt;으로 업데이트되었기에, Node.js 16 지원 종료되었어요.&lt;br&gt;
+&lt;code&gt;node:child_process&lt;/code&gt; 사용한 병렬실행 지원, &lt;code&gt;pool&lt;/code&gt;와 &lt;code&gt;poolOptions&lt;/code&gt;를 지원하며 관련해서 오래된 플래그 삭제 등의 변경이 있어요.&lt;br&gt;
+스냅샷 형식이나 옵션 변경 같이 파괴적 변경도 포함되어 있어서, 이행 가이드도 공개되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://vitest.dev/guide/migration.html#migrating-from-vitest-0-34-6&quot;&gt;Migration Guide | Guide | Vitest&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Astro 4.0가 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://astro.build/blog/astro-4/&quot;&gt;Astro 4.0 | Astro&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;DevToolbar 추가, i18n Routing 추가, View Transition API 지원 개선, Logging 개선이 포함되어 있어요.&lt;br&gt;
+또한, 실험적 기능으로 Incremental Content Caching가 추가되었어요.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h3 class=&quot;inline-support&quot;&gt;To support JSer.info&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;😘 Recommend JSer.info to your friends!&lt;/li&gt;
+    &lt;li&gt;❤️ Support &lt;a href=&quot;https://github.com/sponsors/azu&quot;&gt;@azu on GitHub Sponsors&lt;/a&gt;/&lt;a
+            href=&quot;https://jser.info/sponsor/&quot;&gt;JSer.info Sponsors&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;🐦 Follow &lt;a href=&quot;https://twitter.com/jser_info&quot;&gt;@jser_info on X(Twitter)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;헤드라인&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;fresh-1-6-tailwind-css-plugin-simplified-typings-and-more&quot;&gt;Fresh 1.6: Tailwind CSS plugin, simplified typings and more&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://deno.com/blog/fresh-1.6&quot; title=&quot;Fresh 1.6: Tailwind CSS plugin, simplified typings and more&quot;&gt;deno.com/blog/fresh-1.6&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;deno&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Fresh 1.6 출시.&lt;br&gt;
+Twind에서 Tailwind CSS으로 이행, &lt;code&gt;fresh.gen.ts&lt;/code&gt; 자동생성 결과가 충돌되기 어려운 형식으로 변경, Plugin에서 islands 작성 가능.&lt;br&gt;
+라우팅에 URLPattern가 아니라 정규표현을 사용함으로 성능 개선, Context 자료형 정의를 정리 등 변경&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/denoland/fresh/releases/tag/1.6.0&quot; title=&quot;Release 1.6.0 · denoland/fresh&quot;&gt;Release 1.6.0 · denoland/fresh&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://fresh.deno.dev/docs/examples/migrating-to-tailwind&quot; title=&quot;Migrating to Tailwind | Fresh docs&quot;&gt;Migrating to Tailwind | Fresh docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/denoland/deno/issues/19861&quot; title=&quot;Poor URLPattern performance · Issue #19861 · denoland/deno&quot;&gt;Poor URLPattern performance · Issue #19861 · denoland/deno&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-v5-0-0-reduxjs-redux&quot;&gt;Release v5.0.0 · reduxjs/redux&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/reduxjs/redux/releases/tag/v5.0.0&quot; title=&quot;Release v5.0.0 · reduxjs/redux&quot;&gt;github.com/reduxjs/redux/releases/tag/v5.0.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;redux&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Redux v5.0.0 출시.&lt;br&gt;
+TypeScript으로 다시 작성, CJS/ESM의 dual package으로 변경, ES2020 형식에 출력되도록 변경.&lt;br&gt;
+&lt;code&gt;createStore&lt;/code&gt; 비권장, Redux Toolkit 이행 권장.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-v2-0-0-reduxjs-redux-toolkit&quot;&gt;Release v2.0.0 · reduxjs/redux-toolkit&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/reduxjs/redux-toolkit/releases/tag/v2.0.0&quot; title=&quot;Release v2.0.0 · reduxjs/redux-toolkit&quot;&gt;github.com/reduxjs/redux-toolkit/releases/tag/v2.0.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;redux&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Redux Toolkit v2.0.0 출시.&lt;br&gt;
+Redux v5/Reselect 5.0으로 업데이트, &lt;code&gt;createReducer&lt;/code&gt;/&lt;code&gt;createSlice&lt;/code&gt;의 &lt;code&gt;extraReducers&lt;/code&gt; 객체 구문 지원 삭제.&lt;br&gt;
+&lt;code&gt;middleware&lt;/code&gt; 옵션이 배열이 아니라 콜백함수만 받도록 변경, 자료형 정의 변경.&lt;br&gt;
+&lt;code&gt;combineSlices&lt;/code&gt; 추가, &lt;code&gt;createDynamicMiddleware&lt;/code&gt; 추가, &lt;code&gt;autoBatchEnhancer&lt;/code&gt; 기본적으로 유효화&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://redux.js.org/usage/migrations/migrating-rtk-2&quot; title=&quot;Migrating to RTK 2.0 and Redux 5.0 | Redux&quot;&gt;Migrating to RTK 2.0 and Redux 5.0 | Redux&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-v6-0-0-avajs-ava&quot;&gt;Release v6.0.0 · avajs/ava&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/avajs/ava/releases/tag/v6.0.0&quot; title=&quot;Release v6.0.0 · avajs/ava&quot;&gt;github.com/avajs/ava/releases/tag/v6.0.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;nodejs&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;jailbreak&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;AVA v6.0.0 출시.&lt;br&gt;
+Npde.js 14/16 지원 종료, Watch 모드 개선, &lt;code&gt;t.throws()&lt;/code&gt;에 &lt;code&gt;any&lt;/code&gt; 옵션 추가&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-v1-0-0-vitest-dev-vitest&quot;&gt;Release v1.0.0 · vitest-dev/vitest&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/vitest-dev/vitest/releases/tag/v1.0.0&quot; title=&quot;Release v1.0.0 · vitest-dev/vitest&quot;&gt;github.com/vitest-dev/vitest/releases/tag/v1.0.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;vite&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;testing&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;vitest v1.0.0 출시.&lt;br&gt;
+&lt;code&gt;node:child_process&lt;/code&gt; 사용한 병렬 실행 지원, &lt;code&gt;pool&lt;/code&gt;와 &lt;code&gt;poolOptions&lt;/code&gt;를 지원하고 오래된 플래그 삭제.&lt;br&gt;
+Snapshot 형식 지원, 커버리지 개선, &lt;code&gt;--projet&lt;/code&gt; 옵션 추가&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;astro-4-0-astro&quot;&gt;Astro 4.0 | Astro&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://astro.build/blog/astro-4/&quot; title=&quot;Astro 4.0 | Astro&quot;&gt;astro.build/blog/astro-4/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;astro&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Astro 4.0 출시.&lt;br&gt;
+DevToolbar 추가, i18n Routing 추가, View Transition API 지원 개선, Logging 개선.&lt;br&gt;
+실험적 기능으로 Incremental Content Caching 추가&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;electron-28-0-0-electron&quot;&gt;Electron 28.0.0 | Electron&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.electronjs.org/blog/electron-28-0&quot; title=&quot;Electron 28.0.0 | Electron&quot;&gt;www.electronjs.org/blog/electron-28-0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Electron&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Electron 28.0.0 출시.&lt;br&gt;
+Chromium 120.0.6099.56, Node.js 18.18.2으로 업데이트.&lt;br&gt;
+ECMAScript Modues 지원&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-v3-11-0-honojs-hono&quot;&gt;Release v3.11.0 · honojs/hono&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/honojs/hono/releases/tag/v3.11.0&quot; title=&quot;Release v3.11.0 · honojs/hono&quot;&gt;github.com/honojs/hono/releases/tag/v3.11.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Hono v3.11.0 출시.&lt;br&gt;
+&lt;code&gt;hono/jsx&lt;/code&gt;에 &lt;code&gt;ErrorBoundary&lt;/code&gt; 추가, &lt;code&gt;hono/dev&lt;/code&gt;에 라우팅 목록 출력하는 &lt;code&gt;showRoutes&lt;/code&gt; 추가.&lt;br&gt;
+&lt;code&gt;c.jsonT()&lt;/code&gt;를 Deprecated으로, &lt;code&gt;c.json()&lt;/code&gt;가 RPC에서도 이용 가능.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://zenn.dev/yusukebe/articles/d1be7aa06999cb&quot; title=&quot;Hono의 v3.10와 v3.11에 대해서&quot;&gt;Hono의 v3.10와 v3.11에 대해서&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-v14-0-0-sindresorhus-got&quot;&gt;Release v14.0.0 · sindresorhus/got&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/sindresorhus/got/releases/tag/v14.0.0&quot; title=&quot;Release v14.0.0 · sindresorhus/got&quot;&gt;github.com/sindresorhus/got/releases/tag/v14.0.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;nodejs&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;HTTP&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Got v14.0.0 출시.&lt;br&gt;
+Node.js 18 지원 종료.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;읽을거리&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;web-performance-calendar-fastest-way-of-passing-state-to-javascript-re-visited&quot;&gt;Web Performance Calendar » Fastest Way of Passing State to JavaScript, Re-visited&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://calendar.perfplanet.com/2023/fastest-way-passing-state-javascript-revisited/&quot; title=&quot;Web Performance Calendar » Fastest Way of Passing State to JavaScript, Re-visited&quot;&gt;calendar.perfplanet.com/2023/fastest-way-passing-state-javascript-revisited/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;performance&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;SSR 상태를 포함해서 전달할 때 성능 비교.&lt;br&gt;
+JS 출력하는 방법, Invalid한 Mime type 포함하는 방법, JSON 포함하는 방법에 대해&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;vuefes-japan-2023-gihyo-jp&quot;&gt;VueFes Japan 2023 이벤트 리포트 | gihyo.jp&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gihyo.jp/article/2023/11/vuefes-japan-2023-report&quot; title=&quot;VueFes Japan 2023 이벤트 리포트 | gihyo.jp&quot;&gt;gihyo.jp/article/2023/11/vuefes-japan-2023-report&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Vue&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;VueFes Japan 2023 리포트&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://speakerdeck.com/kazupon/vue-and-vite-rustify&quot; title=&quot;Vue &amp;amp;amp;amp; Vite Rustify - Speaker Deck&quot;&gt;Vue &amp;amp; Vite Rustify - Speaker Deck&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;ecosystem-2023-recap-electron&quot;&gt;Ecosystem 2023 Recap | Electron&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.electronjs.org/blog/ecosystem-2023-eoy-recap&quot; title=&quot;Ecosystem 2023 Recap | Electron&quot;&gt;www.electronjs.org/blog/ecosystem-2023-eoy-recap&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Electron&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Electron 에코시스템 업데이트 소개.&lt;br&gt;
+Electron Forge, Auto updates 정적 스토리지 지원, &lt;code&gt;@electron/windows-sign&lt;/code&gt;에 대해서&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;슬라이드, 영상&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;2020-2023-css-yamascrapbox&quot;&gt;2020년에서 2023년까지 CSS 변화를 돌아보며 - yamaScrapbox&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://scrapbox.io/yamanoku/2020%E5%B9%B4%E3%81%8B%E3%82%892023%E5%B9%B4%E3%81%BE%E3%81%A7%E3%81%AECSS%E3%81%AE%E5%A4%89%E9%81%B7%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B&quot; title=&quot;2020년에서 2023년까지 CSS 변화를 돌아보며 - yamaScrapbox&quot;&gt;scrapbox.io/yamanoku/2020%E5%B9%B4%E3%81%8B%E3%82%892023%E5%B9%B4%E3%81%BE%E3%81%A7%E3%81%AECSS%E3%81%AE%E5%A4%89%E9%81%B7%E3%82%92%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8B&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;CSS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;slide&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;2020년 이후 구현된 CSS 기능 소개&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;소프트웨어, 도구, 라이브러리&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;unjs-unenv-convert-javascript-code-to-be-runtime-agnostic&quot;&gt;unjs/unenv: 🕊️ Convert javaScript code to be runtime agnostic&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/unjs/unenv/tree/main&quot; title=&quot;unjs/unenv: 🕊️ Convert javaScript code to be runtime agnostic&quot;&gt;github.com/unjs/unenv/tree/main&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;nodejs&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;polyfill&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Node.js Core Modules 등에 polyfill이나 Mock 제공하는 라이브러리.&lt;br&gt;
+Node.js 대상 코드를 다른 실행 환경에서도 동작시키는 라이브러리&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;facebook-stylex-stylex-is-the-styling-system-for-ambitious-user-interfaces&quot;&gt;facebook/stylex: StyleX is the styling system for ambitious user interfaces.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/facebook/stylex&quot; title=&quot;facebook/stylex: StyleX is the styling system for ambitious user interfaces.&quot;&gt;github.com/facebook/stylex&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;CSS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Facebook의 Atomic CSS in JS 라이브러리.&lt;br&gt;
+TypeScript로 Type Safe 스타일 정의 적용 가능, 빌드할 때 CSS 파일로 컴파일함으로써 실행 시에 비용을 적게함.&lt;br&gt;
+&lt;code&gt;stylex.create&lt;/code&gt;으로 스타일 정의, &lt;code&gt;stylex.props&lt;/code&gt;으로 항상 뒷부분이 우선되는 병합 규칙으로 스타일 적용 가능.&lt;/p&gt;
+
+&lt;hr&gt;
+</description>
+        <pubDate>Fri, 08 Dec 2023 22:05:55 +0900</pubDate>
+        <link>https://jser.info/ko/2023/12/08/redux-5.0.0-vitest-1.0.0-astro-4.0/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2023/12/08/redux-5.0.0-vitest-1.0.0-astro-4.0/</guid>
+        
+        <category>nodejs</category>
+        
+        <category>redux</category>
+        
+        <category>CSS</category>
+        
+        <category>Electron</category>
+        
+        <category>deno</category>
+        
+        
+        <category>JSer</category>
+        
+      </item>
+    
+      <item>
+        <title>2023-12-01: Node.js v18.19.0(LTS), BiomeとPrettier, CSS Hooks</title>
+        <description>&lt;p&gt;JSer.info #671 - Node.js v18.19.0가 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://nodejs.org/en/blog/release/v18.19.0&quot;&gt;Node v18.19.0 (LTS) | Node.js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/npm/cli/releases/tag/v10.0.0&quot;&gt;npm 10&lt;/a&gt; 업데이트, &lt;code&gt;node:module&lt;/code&gt;에 &lt;code&gt;register&lt;/code&gt; API 추가, &lt;code&gt;import.meta.resolve&lt;/code&gt; 지원돼요.&lt;br&gt;
+그리고, &lt;code&gt;.js&lt;/code&gt; 기본값을 CJS에서 ESM로 변경하는 &lt;code&gt;--experimental-default-type&lt;/code&gt; 플래그가 백포트돼요.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Biome v1.4.0 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://biomejs.dev/blog/biome-wins-prettier-challenge&quot;&gt;Biome formatter wins the Prettier challenge | Biome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/biomejs/biome/releases/tag/cli%2Fv1.4.0&quot;&gt;Release CLI v1.4.0 · biomejs/biome&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Prettier의 JS/TS/JSX 관련 테스트케이스를 95% 이상 통과한 Rust 구현 대회 &lt;a href=&quot;https://console.algora.io/challenges/prettier&quot;&gt;The Prettier Challenge&lt;/a&gt;가 있었어요.&lt;br&gt;
+Biome v1.4.0는 이 도전과제를 달성했으며, Pretttier 포맷터 결과 96% 일치했어요.&lt;br&gt;
+의도적인 다르게 만든 부분은 다음 Issue에 정리되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/biomejs/biome/issues/739&quot;&gt;☂️ Prettier Divergence collection from the Prettier challenge · Issue #739 · biomejs/biome&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;그 외로, 포맷 관련한 옵션 추가, &lt;code&gt;--config-path&lt;/code&gt; 플래그 추가, Lint 규칙 추가도 있어요.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://prettier.io/blog/2023/11/30/cli-deep-dive&quot;&gt;Prettier&amp;#39;s CLI: A Performance Deep Dive · Prettier&lt;/a&gt; 에서는 Prettier의 CLI 성능 개선에 대해 언급되고 있어요.&lt;/p&gt;
+
+&lt;p&gt;glob 파일 탐색 개선, INI 파일 파싱 개선, 캐시를 기본값으로 변경, &lt;code&gt;console.log&lt;/code&gt; 출력을 버퍼링하도록 변경하는 등 CLI 개선에 관련된 이야기가 있어요.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;CSS Hooks 라이브러리는, &lt;code&gt;style&lt;/code&gt; 속성 스타일링 가능한 CSS in JS이며, &lt;code&gt;:hover&lt;/code&gt; 같은 추상 클래스도 지원돼요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/css-hooks/css-hooks&quot;&gt;css-hooks/css-hooks: Hook into advanced CSS features with native inline styles.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;CSS Hooks는, CSS Custom Properties 사용함으로 style 속성에서 추상 클래스나 Media Query 지원해요. CSS Custom Properties로 if문 같이 스타일링 토글 가능하고요.&lt;/p&gt;
+
+&lt;p&gt;상세한 구조는, 다음 글을 참조해주세요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://kizu.dev/cyclic-toggles/&quot;&gt;Cyclic Dependency Space Toggles&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h3 class=&quot;inline-support&quot;&gt;To support JSer.info&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;😘 Recommend JSer.info to your friends!&lt;/li&gt;
+    &lt;li&gt;❤️ Support &lt;a href=&quot;https://github.com/sponsors/azu&quot;&gt;@azu on GitHub Sponsors&lt;/a&gt;/&lt;a
+            href=&quot;https://jser.info/sponsor/&quot;&gt;JSer.info Sponsors&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;🐦 Follow &lt;a href=&quot;https://twitter.com/jser_info&quot;&gt;@jser_info on X(Twitter)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;헤드라인&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-v135-introducing-esm-sh-run-esm-dev-esm-sh&quot;&gt;Release v135 / Introducing esm.sh/run · esm-dev/esm.sh&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/esm-dev/esm.sh/releases/tag/v135&quot; title=&quot;Release v135 / Introducing esm.sh/run · esm-dev/esm.sh&quot;&gt;github.com/esm-dev/esm.sh/releases/tag/v135&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;cdn&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;esm.sh v135 출시.&lt;br&gt;
+JSX나 TS 코드 변경과 실행 가능한 &lt;code&gt;https://esm.sh/run&lt;/code&gt; 추가&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;biome-formatter-wins-the-prettier-challenge&quot;&gt;Biome formatter wins the Prettier challenge |&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://biomejs.dev/blog/biome-wins-prettier-challenge&quot; title=&quot;Biome formatter wins the Prettier challenge |&quot;&gt;biomejs.dev/blog/biome-wins-prettier-challenge&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Rust&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tools&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Biome v1.4.0 출시.&lt;br&gt;
+JS/TS/JSX 포맷터 결과를 Prettier 호환하도록 개선. 현 시점 Prettier 결과와 96% 일치. 몇 가지 포맷터는 의도적으로 다르게 구현.&lt;br&gt;
+포맷터 관련한 옵션 추가, &lt;code&gt;--config-path&lt;/code&gt; 플래그 추가, Lint 규칙 추가&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/biomejs/biome/releases/tag/cli%2Fv1.4.0&quot; title=&quot;Release CLI v1.4.0 · biomejs/biome&quot;&gt;Release CLI v1.4.0 · biomejs/biome&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-v9-0-0-cosmiconfig-cosmiconfig&quot;&gt;Release v9.0.0 · cosmiconfig/cosmiconfig&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/cosmiconfig/cosmiconfig/releases/v9.0.0&quot; title=&quot;Release v9.0.0 · cosmiconfig/cosmiconfig&quot;&gt;github.com/cosmiconfig/cosmiconfig/releases/v9.0.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;nodejs&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;설정 파일 모더 라이브러리 cosmiconfig 9.0.0 출시.&lt;br&gt;
+&lt;code&gt;searchStrategy&lt;/code&gt; 옵션, &lt;code&gt;$import:&lt;/code&gt; 지원.&lt;br&gt;
+파일 시스템 권한을 얻을 수 없어 실패했을 때 크래시되는 문제 수정&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;astro-4-0-beta-release-astro&quot;&gt;Astro 4.0 Beta Release | Astro&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://astro.build/blog/astro-4-beta/&quot; title=&quot;Astro 4.0 Beta Release | Astro&quot;&gt;astro.build/blog/astro-4-beta/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;astro&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Astro 4.0 Beta 출시.&lt;br&gt;
+Vite 5으로 업데이트, &lt;code&gt;&amp;lt;ViewTransitions /&amp;gt;&lt;/code&gt; 관련 라이프 사이클 이벤트 추가&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;node-v18-19-0-lts-node-js&quot;&gt;Node v18.19.0 (LTS) | Node.js&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://nodejs.org/en/blog/release/v18.19.0&quot; title=&quot;Node v18.19.0 (LTS) | Node.js&quot;&gt;nodejs.org/en/blog/release/v18.19.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;nodejs&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Node.js v18.19.0 출시.&lt;br&gt;
+npm 10으로 업데이트, &lt;code&gt;node:module&lt;/code&gt;에 &lt;code&gt;register&lt;/code&gt; API 추가, &lt;code&gt;import.meta.resolve&lt;/code&gt; 지원.&lt;br&gt;
+&lt;code&gt;.js&lt;/code&gt; 기본값을 CJS에서 ESM으로 변경하는 &lt;code&gt;--experimental-default-type&lt;/code&gt; 플래그 지원.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;node-js-downloads&quot;&gt;Node.js Downloads&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://nodedownloads.nodeland.dev/&quot; title=&quot;Node.js Downloads&quot;&gt;nodedownloads.nodeland.dev/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;nodejs&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;webservice&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Node.js 버전 마다 다운로드 수를 시각화하는 웹사이트&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;storybook-7-6&quot;&gt;Storybook 7.6&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://storybook.js.org/blog/storybook-7-6/&quot; title=&quot;Storybook 7.6&quot;&gt;storybook.js.org/blog/storybook-7-6/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Development&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;debug&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tools&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Storybook 7.6 출시.&lt;br&gt;
+webpack 프로젝트에서도 SWC 이용 가능하도록 변경, &lt;code&gt;@storybook/test&lt;/code&gt;의 assertion를 Vitest의 expect으로 변경, Test mode 추가.&lt;br&gt;
+react-docgen 업데이트로 기동 시간 개선, Storyshots와 Vue2 지원 비권장화&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;node-v21-3-0-current-node-js&quot;&gt;Node v21.3.0 (Current) | Node.js&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://nodejs.org/en/blog/release/v21.3.0&quot; title=&quot;Node v21.3.0 (Current) | Node.js&quot;&gt;nodejs.org/en/blog/release/v21.3.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;nodejs&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Node.js v21.3.0 출시.&lt;br&gt;
+&lt;code&gt;--disable-warning&lt;/code&gt; 플래그 추가, 루트 증명성를 NSS 3.95으로 갱신, UTF-8 문자열을 &lt;code&gt;fs.writeFileSync&lt;/code&gt;에서 작성할 때 성능 개선&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;tapjs-tsimp&quot;&gt;tapjs/tsimp&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/tapjs/tsimp&quot; title=&quot;tapjs/tsimp&quot;&gt;github.com/tapjs/tsimp&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;TypeScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;nodejs&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;ts-node 같이 TypeScript 코드 타입 체크하면서 컴파일하는 로더.&lt;br&gt;
+Node.js 20부터 지원되는 &lt;code&gt;Module.register()&lt;/code&gt; 사용해서 &lt;code&gt;node --import&lt;/code&gt; 동작. 또한 데몬과 캐시 사용함으로 불필요한 처리 스킵 가능.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;읽을거리&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;prettiers-cli-a-performance-deep-dive-prettier&quot;&gt;Prettier&amp;#039;s CLI: A Performance Deep Dive · Prettier&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://prettier.io/blog/2023/11/30/cli-deep-dive&quot; title=&quot;Prettier&amp;amp;#039;s CLI: A Performance Deep Dive · Prettier&quot;&gt;prettier.io/blog/2023/11/30/cli-deep-dive&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;nodejs&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;performance&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Prettier의 CLI 퍼포먼스 개선에 대해.&lt;br&gt;
+glob 파일 탐색 개선, INI 파일 파싱 개선, 캐시 기본값으로, &lt;code&gt;console.log&lt;/code&gt; 출력 버퍼링하도록 변경&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;css-containment-1-blog&quot;&gt;CSS Containment 구조 이해하며 렌더링 퍼포먼스 개선1 개요 | 프론트엔드 Blog | 미츠에링크스&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.mitsue.co.jp/knowledge/blog/frontend/202311/28_1448.html&quot; title=&quot;CSS Containment 구조 이해하며 렌더링 퍼포먼스 개선1 개요 | 프론트엔드 Blog | 미츠에링크스&quot;&gt;www.mitsue.co.jp/knowledge/blog/frontend/202311/28_1448.html&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;CSS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;CSS Containment 관련하여&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;소프트웨어, 도구, 라이브러리&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;architect-aws-lite-a-simple-fast-extensible-aws-client&quot;&gt;architect/aws-lite: A simple, fast, extensible AWS client&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/architect/aws-lite&quot; title=&quot;architect/aws-lite: A simple, fast, extensible AWS client&quot;&gt;github.com/architect/aws-lite&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;aws&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;AWS의 API 클라리언트 라이브러리.&lt;br&gt;
+AWS SDK 성능이나 스택 트레이스 등 문제 다루기 위해 작성.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;css-hooks-css-hooks-hooks-bring-advanced-css-features-to-native-inline-styles&quot;&gt;css-hooks/css-hooks: Hooks bring advanced CSS features to native inline styles.&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/css-hooks/css-hooks&quot; title=&quot;css-hooks/css-hooks: Hooks bring advanced CSS features to native inline styles.&quot;&gt;github.com/css-hooks/css-hooks&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;CSS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;style 속성으로 스타일링 하는 CSS in JS 라이브러리. React/Preact/Solid 지원.&lt;br&gt;
+CSS custom properties 사용해서, &lt;code&gt;:hover&lt;/code&gt; 등 추상 클래스나 Media Query 관련 스타일링을 style 속성으로 구현하고 있음.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;tapjs-tsimp&quot;&gt;tapjs/tsimp&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/tapjs/tsimp&quot; title=&quot;tapjs/tsimp&quot;&gt;github.com/tapjs/tsimp&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;TypeScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;nodejs&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tools&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;ts-node 같이 TypeScript 코드를 타입 체크하면서 컴파일링하는 로더.&lt;br&gt;
+Node.js 20에서 지원하는 &lt;code&gt;Module.register()&lt;/code&gt;를 사용해 &lt;code&gt;node --import&lt;/code&gt; 동작. 또한 데몬과 캐시 사용함으로 불필요한 처리 스킵 가능.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;도서&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;fluent-react&quot;&gt;Fluent React&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://learning.oreilly.com/library/view/fluent-react/9781098138707/&quot; title=&quot;Fluent React&quot;&gt;learning.oreilly.com/library/view/fluent-react/9781098138707/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;book&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;2024년 3월 발매.&lt;br&gt;
+React 관련 도서&lt;/p&gt;
+
+&lt;hr&gt;
+</description>
+        <pubDate>Fri, 01 Dec 2023 17:35:59 +0900</pubDate>
+        <link>https://jser.info/ko/2023/12/01/node.js-v18.19.0lts-biomeprettier-css-hooks/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2023/12/01/node.js-v18.19.0lts-biomeprettier-css-hooks/</guid>
+        
+        <category>nodejs</category>
+        
+        <category>Tools</category>
+        
+        <category>CSS</category>
+        
+        <category>React</category>
+        
+        <category>TypeScript</category>
+        
+        
+        <category>JSer</category>
+        
+      </item>
+    
+      <item>
+        <title>2023-11-26: Vite 5, Node.js 20.10.0(ESM 기본값 만들기 플래그), State of JS 앙케이트 시작</title>
+        <description>&lt;p&gt;JSer.info #670 - Vite 5.0 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://vitejs.dev/blog/announcing-vite5&quot;&gt;Vite 5.0 is out! | Vite&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Node.js 14/16 지원 종료, Rollup 4으로 업데이트, CommonJS Node API(&lt;code&gt;require(&amp;quot;vite&amp;quot;)&lt;/code&gt;) 비권장도 포함되어 있어요.&lt;br&gt;
+그리고 &lt;code&gt;define&lt;/code&gt; 치환방법을 dev와 production build가 같은 방법으로 동작하도록 변경, dev와 preview에서 URL 끝에 슬래시처리가 다른 문제 수정, 비권장 API 삭제 등 포함되었어요.&lt;/p&gt;
+
+&lt;p&gt;이행 가이드도 함께 공개중이에요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://vitejs.dev/guide/migration#deprecate-cjs-node-api&quot;&gt;Migration from v4 | Vite&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Node.js 20.10.0 출시되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://nodejs.org/en/blog/release/v20.10.0&quot;&gt;Node v20.10.0 (LTS) | Node.js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;주로 개발판 Node.js 21.x에서 backporting이 중심이에요.&lt;/p&gt;
+
+&lt;p&gt;ESM 기본값으로 만드는 &lt;code&gt;--experimental-default-type&lt;/code&gt;와 &lt;code&gt;--experimental-detect-module&lt;/code&gt; 플래그를 추가되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://jser.info/ko/2023/10/18/node.js-roadmap-esm-by-default/&quot;&gt;Deep Dive: Node.js에서  기본값 ESM으로 가는 길 - JSer.info&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;fs.writeFile&lt;/code&gt;에 &lt;code&gt;flush&lt;/code&gt; 옵션 추가, &lt;code&gt;WebSocket&lt;/code&gt; 글로벌에 추가하는 &lt;code&gt;--experimental-websocket&lt;/code&gt; 플래그 추가.&lt;br&gt;
+Jest로 메모리 누스 원인이 된 VMScript와 Dynamic Import 관련 문제도 포함되어 있어요.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;JavaScript 개발자 앙케이트 State of JavaScript 2023 시작되었어요.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://survey.devographics.com/survey/state-of-js/2023&quot;&gt;State of JavaScript 2023&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;JavaScript 새로운 기능에 관련한 이해도나 프레임워크 이용에 대한 앙케이트에요.&lt;br&gt;
+앙케이트 결과는 여러 곳에서 참조하고 있으므로, 시간이 있다면 참가하는 것이 좋아요.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h3 class=&quot;inline-support&quot;&gt;To support JSer.info&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;😘 Recommend JSer.info to your friends!&lt;/li&gt;
+    &lt;li&gt;❤️ Support &lt;a href=&quot;https://github.com/sponsors/azu&quot;&gt;@azu on GitHub Sponsors&lt;/a&gt;/&lt;a
+            href=&quot;https://jser.info/sponsor/&quot;&gt;JSer.info Sponsors&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;🐦 Follow &lt;a href=&quot;https://twitter.com/jser_info&quot;&gt;@jser_info on X(Twitter)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;헤드라인&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;vite-5-0-is-out-vite&quot;&gt;Vite 5.0 is out! | Vite&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://vitejs.dev/blog/announcing-vite5&quot; title=&quot;Vite 5.0 is out! | Vite&quot;&gt;vitejs.dev/blog/announcing-vite5&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;vite&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Vite 5.0 출시.&lt;br&gt;
+Node.js 14/16 지원 종료, Rollup 4 업데이트, CJS Node API 비권장화.&lt;br&gt;
+&lt;code&gt;define&lt;/code&gt; 치환 방법을 dev와 production build가 같은 방법으로 동작하도록 변경, dev와 preview에서 URL 끝에 슬래시처리가 다른 문제 수정, 비권장 API 삭제&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://vitejs.dev/guide/migration#deprecate-cjs-node-api&quot; title=&quot;Migration from v4 | Vite&quot;&gt;Migration from v4 | Vite&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;bun-v1-0-13-bun-blog&quot;&gt;Bun v1.0.13 | Bun Blog&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://bun.sh/blog/bun-v1.0.13&quot; title=&quot;Bun v1.0.13 | Bun Blog&quot;&gt;bun.sh/blog/bun-v1.0.13&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Bun&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Bun v1.0.13 출시.&lt;br&gt;
+&lt;code&gt;node:http2&lt;/code&gt; 지원 개선 &lt;code&gt;@grpc/grpc-js&lt;/code&gt;가 동작하도록 수정, &lt;code&gt;process.report.getReport()&lt;/code&gt; 지원하며 Vite 5/Rollup 4 동작하도록 수정.&lt;br&gt;
+&lt;code&gt;with&lt;/code&gt; statement 포함하는 파일 변환 지원, &lt;code&gt;Bun.spawn&lt;/code&gt; 에러 개선&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-8-0-0-vvo-iron-session&quot;&gt;Release 8.0.0 · vvo/iron-session&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/vvo/iron-session/releases/tag/v8.0.0&quot; title=&quot;Release 8.0.0 · vvo/iron-session&quot;&gt;github.com/vvo/iron-session/releases/tag/v8.0.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Next.js&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;library&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;iron-session 8.0.0 출시.&lt;br&gt;
+Next.js App Router 지원, API도 함께 변경.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;announcing-typescript-5-3-typescript&quot;&gt;Announcing TypeScript 5.3 - TypeScript&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://devblogs.microsoft.com/typescript/announcing-typescript-5-3/&quot; title=&quot;Announcing TypeScript 5.3 - TypeScript&quot;&gt;devblogs.microsoft.com/typescript/announcing-typescript-5-3/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;TypeScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;TypeScript 5.3 출시.&lt;br&gt;
+Stage 3의 Import Attributes 지원, &lt;code&gt;resolution-mode&lt;/code&gt;를 &lt;code&gt;///&lt;/code&gt; 주석 지정되도록.&lt;br&gt;
+&lt;code&gt;switch(true)&lt;/code&gt;에서 Narrowing 지원, &lt;code&gt;[Symbol.hasInstance]&lt;/code&gt;와 &lt;code&gt;insteanceof&lt;/code&gt;를 사용한 Narrowing 지원.&lt;br&gt;
+패키니 내의 bundle 파일 중복 피함으로 패키지 크기 효율적으로.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;firefox-120-0-see-all-new-features-updates-and-fixes&quot;&gt;Firefox 120.0, See All New Features, Updates and Fixes&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.mozilla.org/en-US/firefox/120.0/releasenotes/&quot; title=&quot;Firefox 120.0, See All New Features, Updates and Fixes&quot;&gt;www.mozilla.org/en-US/firefox/120.0/releasenotes/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;Firefox&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Firefox 120 출시.&lt;br&gt;
+&lt;code&gt;&amp;lt;source&amp;gt;&lt;/code&gt;의 &lt;code&gt;media&lt;/code&gt; 속성 재도입, &lt;code&gt;Date.parse()&lt;/code&gt;에서 파싱되는 날짜 포맷 추가, HTTP 103 Early Hints 지원.&lt;br&gt;
+그 외로, Global Privacy Control 지원, CSS의 &lt;code&gt;-moz-image-rect()&lt;/code&gt; 삭제&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/120&quot; title=&quot;Firefox 120 for developers - Mozilla | MDN&quot;&gt;Firefox 120 for developers - Mozilla | MDN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;node-v20-10-0-lts-node-js&quot;&gt;Node v20.10.0 (LTS) | Node.js&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://nodejs.org/en/blog/release/v20.10.0&quot; title=&quot;Node v20.10.0 (LTS) | Node.js&quot;&gt;nodejs.org/en/blog/release/v20.10.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;nodejs&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Node.js v20.10.0 출시.&lt;br&gt;
+ESM 기본값으로 만드는 &lt;code&gt;--experimental-default-type&lt;/code&gt;와 &lt;code&gt;--experimental-detect-module&lt;/code&gt; 플래그 추가.&lt;br&gt;
+&lt;code&gt;fs.writeFile&lt;/code&gt;에 &lt;code&gt;flush&lt;/code&gt; 옵션 추가, &lt;code&gt;WebSocket&lt;/code&gt; 글로벌 추가 &lt;code&gt;--experimental-websocket&lt;/code&gt; 플래그 추가.&lt;br&gt;
+Jest 메모리누수 원인이 된 VMScript와 Dynamic Import 관련 문제 수정&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;release-v3-0-0-lerna-lite-lerna-lite&quot;&gt;Release v3.0.0 · lerna-lite/lerna-lite&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/lerna-lite/lerna-lite/releases/tag/v3.0.0&quot; title=&quot;Release v3.0.0 · lerna-lite/lerna-lite&quot;&gt;github.com/lerna-lite/lerna-lite/releases/tag/v3.0.0&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;monorepo&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tools&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ReleaseNote&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;lerna-lite v3.0.0 출시.&lt;br&gt;
+Node.js 16 지원 종료, &lt;code&gt;lerna run --use-nx&lt;/code&gt; 삭제&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;읽을거리&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;getting-started-with-css-container-queries-mdn-blog&quot;&gt;Getting started with CSS container queries | MDN Blog&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/blog/getting-started-with-css-container-queries/&quot; title=&quot;Getting started with CSS container queries | MDN Blog&quot;&gt;developer.mozilla.org/en-US/blog/getting-started-with-css-container-queries/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;CSS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;article&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;CSS의 Container query 소개 글.&lt;br&gt;
+부모 요소에 &lt;code&gt;@container&lt;/code&gt;의 Media Query 조건 지정해, 자식 요소에 스타일 설정 가능.&lt;br&gt;
+기본적 사용 방법, Container units(&lt;code&gt;cq*&lt;/code&gt;), Style query에 관련해&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;state-of-javascript-2023&quot;&gt;State of JavaScript 2023&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://survey.devographics.com/en-US/survey/state-of-js/2023&quot; title=&quot;State of JavaScript 2023&quot;&gt;survey.devographics.com/en-US/survey/state-of-js/2023&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Survey&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;JavaScript 개발자 앙케이트 State of JavaScript 2023 시작&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;슬라이드, 영상&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;2023-x&quot;&gt;프론트엔드 컨퍼런스 오키나와 2023 공개자료 - X 정리&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://zenn.dev/yumemi_inc/articles/2023-11-18-frontend-conf-okinawa-2023&quot; title=&quot;프론트엔드 컨퍼런스 오키나와 2023 공개자료 - X 정리&quot;&gt;zenn.dev/yumemi_inc/articles/2023-11-18-frontend-conf-okinawa-2023&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;HTML&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;CSS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Conference&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;video&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;slide&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;프론트엔드 컨퍼런스 오키나와 영상과 슬라이드 정리&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://frontend-conf.okinawa.jp/&quot; title=&quot;프론트엔드 컨퍼런스 오키나와 2023&quot;&gt;프론트엔드 컨퍼런스 오키나와 2023&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;intl-speaker-deck&quot;&gt;Intl 지금까지와 지금부터 - Speaker Deck&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/sajikix/intlnojin-madetokorekara&quot; title=&quot;Intl 지금까지와 지금부터 - Speaker Deck&quot;&gt;speakerdeck.com/sajikix/intlnojin-madetokorekara&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;i18n&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;ECMAScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;slide&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;ECMA-402의 Intl 객체에 대한 슬라이드.&lt;br&gt;
+Intl API 소개, 사양 버전마다 추가된 기능, 국제화나 지역화 다루기 위한 Unicode 등이 외부사양에 의존하고 있는 점, Temporal과의 결합&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h1 class=&quot;site-genre&quot;&gt;웹사이트, 서비스, 문서&lt;/h1&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;downloads-by-major&quot;&gt;Downloads by Major&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://majors.nullvoxpopuli.com/&quot; title=&quot;Downloads by Major&quot;&gt;majors.nullvoxpopuli.com/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;webservice&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;Tools&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;npm 패키지 다운로드 수를 메이저 버전 단위로 비교하는 서비스.&lt;br&gt;
+메이저 업데이트 이행이 어느 수준으로 진행되고 있는가 확인 가능&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h2 id=&quot;the-valley-of-code&quot;&gt;The Valley of Code&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://thevalleyofcode.com/&quot; title=&quot;The Valley of Code&quot;&gt;thevalleyofcode.com/&lt;/a&gt;&lt;br&gt;
+&lt;p class=&quot;jser-tags jser-tag-icon&quot;&gt;&lt;span class=&quot;jser-tag&quot;&gt;JavaScript&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;CSS&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;HTTP&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;tutorial&lt;/span&gt; &lt;span class=&quot;jser-tag&quot;&gt;HTML&lt;/span&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;웹 개발 관련 튜토리얼 사이트.&lt;br&gt;
+HTTP/HTML/CSS/JavaScript 등 웹개발 관련 튜토리얼과 GitHub/VSCode 같은 개발 관련 가이드 다룬다&lt;/p&gt;
+
+&lt;hr&gt;
+</description>
+        <pubDate>Sun, 26 Nov 2023 15:42:21 +0900</pubDate>
+        <link>https://jser.info/ko/2023/11/26/vite-5-node.js-20.10.0esm-state-of-js/</link>
+        <guid isPermaLink="true">https://jser.info/ko/2023/11/26/vite-5-node.js-20.10.0esm-state-of-js/</guid>
+        
+        <category>CSS</category>
+        
+        <category>HTML</category>
+        
+        <category>slide</category>
+        
+        <category>Tools</category>
+        
+        <category>vite</category>
+        
+        
+        <category>JSer</category>
+        
+      </item>
+    
+  </channel>
+</rss>

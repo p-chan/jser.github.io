@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JSer.info</title>
+    <meta name="description" content="JavaScriptの最新情報を紹介する週刊ブログ">
+    
+    <meta name="keywords" content="JavaScript,ブラウザ,ECMAScript" />
+    
+    <meta name="author" content="azu">
+    <link href="https://github.com/jser" rel="me">
+    <link href="https://twitter.com/azu_re" rel="me">
+    <link href="https://twitter.com/jser_info" rel="me">
+    <link href="https://mstdn.jp/@azu_re" rel="me">
+    <link href="https://mstdn.jp/@jser" rel="me">
+    
+    
+    
+
+    
+    <link rel="canonical" href="https://jser.info/page/56/">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://jser.info/rss/">
+    <link rel="apple-touch-icon" sizes="57x57" href="/public/img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/public/img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/public/img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/public/img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/public/img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/public/img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/public/img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/public/img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/img/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/public/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/public/img/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/public/img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/public/img/favicon/favicon-16x16.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/public/img/favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Preload Hero Images: Improves LCP-->
+    <link rel="preload" as="image" href="/public/img/logo.png"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/public/css/index.css">
+    <!-- JavaScript -->
+    <script src="/public/js/switch-alt-link.js" async defer></script>
+    <!-- Open graph tags -->
+<meta name="twitter:card" content="JavaScriptの最新情報を紹介する週刊ブログ" />
+<meta name="twitter:site" content="@jser_info" />
+
+
+<meta property="og:title" content="JSer.info">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jser.info/page/56/">
+<meta property="og:image" content="https://jser.info/media/logo.png">
+
+<meta property="og:description" content="JavaScriptの最新情報を紹介する週刊ブログ">
+<meta property="og:site_name" content="JSer.info">
+
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q66PHF829Y"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q66PHF829Y');
+</script>
+<script>
+    /*
+    ga-on="click" がついている要素がクリックされたら、
+    イベントをトリガーして、Google Analytics に送信する
+    @example
+    ga-on="click"
+    ga-event-name="join_slack"
+    @see https://developers.google.com/analytics/devguides/collection/ga4/tag-guide?hl=ja#custom_events
+     */
+    document.addEventListener('DOMContentLoaded', function () {
+        const gaOnElements = document.querySelectorAll('[ga-on="click"]');
+        gaOnElements.forEach(function (element) {
+            element.addEventListener("click", function () {
+                const eventName = element.getAttribute('ga-event-name');
+                gtag('event', eventName);
+            });
+        });
+    });
+</script>
+
+</head>
+
+
+<body>
+<header>
+    <a href="https://github.com/jser/jser.github.io" class="github-ribbon">
+        <img style="position: absolute; top: 0; right: 0; border: 0;"
+             src="/public/img/github-ribbon.png"
+             alt="Fork me on GitHub"
+             loading="lazy"
+        >
+    </a>
+    <div class="global-header">
+    <h1 class="site-title"><a href="/" title="JSer.info">
+        <!-- 3:1 aspect ratio-->
+        <img
+            alt=""
+            src="/public/img/logo.png"
+            width="518"
+            height="172"
+    /></a></h1>
+    <h2 class="site-description">JavaScriptの最新情報を紹介する週刊ブログ</h2>
+    <nav class="lang-menu">
+        <ul>
+            <li><a href="/" data-alt-href="/page/56/">日本語</a></li>
+            <li><a href="/ko/" data-alt-href="/ko/page/56/">한국어</a></li>
+        </ul>
+        
+        <div>
+            <p>リアルタイム版は<a href="https://realtime.jser.info/" title="Realtime JSer.info">Realtime JSer.info</a></p>
+        </div>
+        
+    </nav>
+</div>
+
+</header>
+<div class="content-wrapper">
+    <article>
+        <div class="page-content">
+            
+
+<div class="home">
+
+    <h1>投稿一覧</h1>
+    
+    <section>
+        <div class="article">
+            <header>
+                <h1><a href="/post/75446735069/jser-info-pull-request">JSer.infoに紹介してもらいたい記事のPull Requestが出来るようになりました</a></h1>
+            </header>
+            <p>
+
+JSer.info Pull Request Form というサイトを作りました。
+
+どういうサイトかという説明の前に簡単なJSer.infoの運用の話。
+
+JSer.infoに記事が乗るまでの流れ
+
+JSer.infoは大体週1...</p>
+            <div class="post-meta">
+                <span class="post-date">2014年02月03日</span>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="article">
+            <header>
+                <h1><a href="/post/74722015170/2014-01-27-js-eslint-0-3-0-jquery">2014-01-27のJS:ESLint 0.3.0、jQuery 2.1リリース、Backbone.Marionette</a></h1>
+            </header>
+            <p>JSer.info #159 - JS ASTをベースとしてJavaScriptのLintツールであるESLint 0.3.0がリリースされました。どんな感じのものかは以下を参照して下さい。
+
+ESLint 0.1.0がリリースされた...</p>
+            <div class="post-meta">
+                <span class="post-date">2014年01月27日</span>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="article">
+            <header>
+                <h1><a href="/post/73953487267/2014-01-21-js-jquery-2-1-0">2014-01-21のJS: jQuery 2.1.0 RC1リリース、browserify入門、ECMAScript 6 @ 2013</a></h1>
+            </header>
+            <p>JSer.info #158 - jQuery 1.11.0 RC1 と 2.1.0 RC1がリリースされました。
+
+jQuery 2.1.0はnpmからもインストールできるようになったようです。
+
+https://npmjs.org...</p>
+            <div class="post-meta">
+                <span class="post-date">2014年01月21日</span>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="article">
+            <header>
+                <h1><a href="/post/73484514668/third-anniversary">third anniversary</a></h1>
+            </header>
+            <p>今日で JSer.info を初めてから丸3年が経ちました。
+
+2011-01-16のJavaScript, JSer.info初投稿の記事 | JSer.info
+JSer.info 1年を迎えて でかかれている方針からあまり変化は...</p>
+            <div class="post-meta">
+                <span class="post-date">2014年01月16日</span>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="article">
+            <header>
+                <h1><a href="/post/73206411885/2014-01-13-js-sweet-js">2014-01-13のJS: sweet.js 0.4.0、Generatorチュートリアル、同期的に書ける結合テストフレームワークTestium</a></h1>
+            </header>
+            <p>JSer.info #157 - JavaScriptをマクロを使って展開出来るSweet.js v0.4.0がリリースされました。
+
+sweet.jsについての紹介とES6のsyntaxをmacroで実装したものについて紹介されてる...</p>
+            <div class="post-meta">
+                <span class="post-date">2014年01月13日</span>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="article">
+            <header>
+                <h1><a href="/post/73202282881/grasp-javascript">Graspを使ったJavaScriptのリファクタリング</a></h1>
+            </header>
+            <p>Refactoring your JavaScript code with Grasp | Grasp - JavaScript structural search, replace, and refactor
+
+という記事では、Gr...</p>
+            <div class="post-meta">
+                <span class="post-date">2014年01月13日</span>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="article">
+            <header>
+                <h1><a href="/post/72442862507/2014-01-06-js-koa-0-2-0-jquery-mobile-1-4-0-functional">2014-01-06のJS:Koa 0.2.0、jQuery Mobile 1.4.0、Functional JavaScript</a></h1>
+            </header>
+            <p>JSer.info #156 - NodeのWebフレームワークであるKoa 0.2.0(0.2.1)がリリースされました。socket errorのハンドリングができるようになったり、デバッグしやすくなるなどの改善されているようです...</p>
+            <div class="post-meta">
+                <span class="post-date">2014年01月06日</span>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="article">
+            <header>
+                <h1><a href="/post/71734160602/2013-12-31-js-jshint-2-4-0-koa-selenium-builder">2013-12-31のJS: JSHint 2.4.0、koaチュートリアル、Selenium Builder</a></h1>
+            </header>
+            <p>JSer.info #155 - JSHint 2.4.0 がリリースされました。bugfixが中心ですが、追加された機能についてはWhat&#8217;s new in JSHint (December, 2013)に書かれています...</p>
+            <div class="post-meta">
+                <span class="post-date">2013年12月31日</span>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="article">
+            <header>
+                <h1><a href="/post/70888873447/2013-12-23-js-jasmine-2-0-promises-x">2013-12-23のJS: Jasmine 2.0、Promises x Generator、Koa、ストリーミングビルドシステムgulp</a></h1>
+            </header>
+            <p>JSer.info #154 - JavaScripttテストフレームワークのJasmine2.0がリリースされました。(一つ前は1.3.x)
+
+Jasmine 2.0 Release
+jasmine/releasenotes/20....</p>
+            <div class="post-meta">
+                <span class="post-date">2013年12月23日</span>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="article">
+            <header>
+                <h1><a href="/post/70188909334/2013-12-16-js-firefox">2013-12-16のJS: Firefox 26、JavaScript開発者アンケート結果、MV*ライブラリとセキュリティ</a></h1>
+            </header>
+            <p>JSer.info #153 - Firefox 26がリリースされました。主な変更点や追加機能はFirefox 26 for developers - Mozilla | MDNにまとまっていますが、IndexedDBがユーザーの許...</p>
+            <div class="post-meta">
+                <span class="post-date">2013年12月16日</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pagination links -->
+    <nav>
+        <div class="pagination">
+            
+                
+                <a href="/page/55/" class="previous">新しい記事へ</a>
+                
+            
+            <span class="page_number ">Page: 56 of 74</span>
+            
+            <a href="/page/57/" class="next" rel="next">古い記事へ</a>
+            
+        </div>
+    </nav>
+</div>
+
+        </div>
+    </article>
+    <aside>
+        <div class="page-sidebar">
+    <div class="profile">
+        <a href="https://twitter.com/azu_re" title="Twitter: azu_re">
+            <img src="/public/img/azu.png" alt=""></a>
+
+        <h2><a href="https://twitter.com/azu_re">azu</a></h2>
+    </div>
+    
+    <div class="social-icons">
+        <a class="social-icon__twitter" href="https://twitter.com/jser_info" title="Twitter">
+            <img src="/public/svg/twitter.svg" alt="" width='28' height='28' loading="lazy">
+        </a>
+        <a class="social-icon__github" href="https://github.com/jser" title="GitHub">
+            <img src="/public/svg/github.svg" alt="" width='28' height='28' loading="lazy">
+        </a>
+        <a class="social-icon__rss" href="https://jser.info/rss/" title="RSS Feed">
+            <img src="/public/svg/feed.svg" alt="" width='28' height='28' loading="lazy">
+        </a>
+        <a class="social-icon__feedly" href='https://feedly.com/i/subscription/feed%2Fhttps://jser.info/rss/'
+            target='blank'>
+            <img id='feedlyFollow' src='https://s3.feedly.com/img/follows/feedly-follow-square-flat-green_2x.png' alt=''
+                width='28' height='28' loading="lazy">
+        </a>
+    </div>
+    
+    <div class="slack-bar">
+        <details>
+            <summary><img src="/public/svg/slack.svg" alt="" width="50" height="50"
+                    loading="lazy" /><span>SlackでJSer.infoを購読する</span></summary>
+            <p>次のコマンドをSlackのチャンネルで実行すると、JSer.infoのRSSフィードを購読できます</p>
+
+            <pre><code>/feed subscribe https://jser.info/rss/</code></pre>
+
+            <p><button id="js-slack-command-button">Copy</button></p>
+            <p><a href='https://get.slack.help/hc/ja/articles/218688467-Slack-%E3%81%AB-RSS-%E3%83%95%E3%82%A3%E3%83%BC%E3%83%89%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B'
+                    target='blank'>
+                    📝 Slack に RSS フィードを追加する
+                </a>
+            </p>
+        </details>
+    </div>
+    <script async type="module">
+        const copyButtonLabel = "Copy";
+        const codeBlock = document.querySelector(".slack-bar pre");
+        const button = document.querySelector("#js-slack-command-button");
+        if (navigator.clipboard) {
+            button.addEventListener("click", async () => {
+                await copyCode(codeBlock, button);
+            });
+        }
+        async function copyCode(block, button) {
+            const code = block.querySelector("code");
+            const text = code.textContent;
+            await navigator.clipboard.writeText(text);
+            // visual feedback that task is completed
+            button.innerText = "Copied";
+            setTimeout(() => {
+                button.innerText = copyButtonLabel;
+            }, 1000);
+        }
+    </script>
+    
+    <nav>
+        <div class="search-bar">
+            <div class="search-and-submit">
+                <form class="search-box" method="get" action="https://www.google.co.jp/search">
+                    <label>
+                        <input type="search" name="q" placeholder="Enter Search" />
+                    </label>
+                    <input type="hidden" name="q" value="site:jser.info">
+                    <button type="submit">
+                        <span class="drawic drawic-search"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="side-menu">
+            <h1>ページ</h1>
+            <ul>
+                <li><a class="page-link" href="https://jser.info/about/" title="JSer.info About">JSer.info About</a></li>
+                
+                <li><a class="page-link" href="https://jser.info/support/" title="JSer.info Sponsors">JSer.info Support</a></li>
+                
+                <li><a class="page-link" href="https://jser.info/sponsor/" title="JSer.info Sponsors">JSer.info Sponsors</a></li>
+                
+            </ul>
+        </div>
+        <div class="side-menu">
+            <h1>最近の投稿</h1>
+            <ul>
+                
+                
+                <li><a class="page-link" href="/2024/01/28/firefox-122-deno-1.40-safari-17.4-beta/">2024-01-28のJS: Firefox 122、Deno 1.40、Safari 17.4 Beta</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2024/01/21/astro-4.2-bun-1.0.24bun-shell-remixspa/">2024-01-21のJS: Astro 4.2、Bun 1.0.24(Bun Shell)、RemixのSPAモード</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2024/01/16/jser-13th/">JSer.info 13周年: JavaScriptの情報源を整理する</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2024/01/11/biome-v1.5-node.js-v20.11.0-rspack-0.5/">2024-01-11のJS: Biome v1.5、Node.js v20.11.0、Rspack 0.5</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2024/01/02/vue-3.4-vue-2.xeol-quick-lint-js-3.0.0-astrodeno2023/">2024-01-02のJS: Vue 3.4、Vue 2.xのEOL、quick-lint-js 3.0.0、AstroとDenoの2023年まとめ</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2023/12/23/date-fns-3.0.0-firefox-121-react-aria-components-1.0.0-catalyst/">2023-12-23のJS: date-fns 3.0.0、Firefox 121、React Aria Components 1.0.0、Catalyst</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2023/12/15/safari-17.2-deno-1.39webgpu-sveltekit-2/">2023-12-15のJS: Safari 17.2、Deno 1.39(WebGPU)、SvelteKit 2</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/2023/12/08/redux-5.0.0-vitest-1.0.0-astro-4.0/">2023-12-08のJS: Redux 5.0.0、Vitest 1.0.0、Astro 4.0</a></li>
+                
+                
+            </ul>
+        </div>
+    </nav>
+</div>
+
+    </aside>
+</div>
+<footer>
+    <div class="page-footer">
+    <div class="copyright-footer">
+        <div class="copyright">
+            <p>JSer.info is maintained by @<a href="https://twitter.com/azu_re"
+                                              title="azu (azu_re) on Twitter">azu_re</a>.
+            </p>
+        </div>
+        <div class="cc-license">
+            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+                <img alt="Creative commons LICENSE"
+                     style="border-width:0"
+                     width="88"
+                     height="31"
+                     src="https://i.creativecommons.org/l/by/4.0/88x31.png"
+                     loading="lazy"></a>
+        </div>
+    </div>
+</div>
+
+</footer>
+<style>
+    @media screen and (max-width: 1000px) and (max-height: 800px) {
+        .ping-show-button {
+            display: none !important;
+        }
+    }
+
+    .ping-show-button {
+        color: #000000;
+        z-index: 100;
+        position: fixed;
+        bottom: 0;
+        right: 10px;
+        padding: 1em 3em;
+        background-color: #ffffff;
+        border: 1px solid #868686;
+        border-top-left-radius: .5em;
+        border-top-right-radius: .5em;
+        font-size: 12px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<a
+    class="ping-show-button"
+    href="https://join.slack.com/t/jserinfo/shared_invite/zt-g2shzp7o-f_tj6OaphCAFw5Qlt2Jw0A"
+    ga-on="click"
+    ga-event-name="join_slack"
+    target="_blank"
+><img src="/public/svg/slack.svg" alt="" width="28" height="28" /><span>JSer.info Slackに参加する</span></a>
+
+</body>
+</html>

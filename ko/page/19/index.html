@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JSer.info</title>
+    <meta name="description" content="JavaScriptの最新情報を紹介する週刊ブログ">
+    
+    <meta name="keywords" content="JavaScript,ブラウザ,ECMAScript" />
+    
+    <meta name="author" content="azu">
+    <link href="https://github.com/jser" rel="me">
+    <link href="https://twitter.com/azu_re" rel="me">
+    <link href="https://twitter.com/jser_info" rel="me">
+    <link href="https://mstdn.jp/@azu_re" rel="me">
+    <link href="https://mstdn.jp/@jser" rel="me">
+    
+    
+    
+
+    
+    <link rel="canonical" href="https://jser.info/ko/page/19/">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://jser.info/ko/rss/">
+    <link rel="apple-touch-icon" sizes="57x57" href="/public/img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/public/img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/public/img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/public/img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/public/img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/public/img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/public/img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/public/img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/img/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/public/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/public/img/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/public/img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/public/img/favicon/favicon-16x16.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/public/img/favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Preload Hero Images: Improves LCP-->
+    <link rel="preload" as="image" href="/public/img/logo.png"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/public/css/index.css">
+    <!-- JavaScript -->
+    <script src="/public/js/switch-alt-link.js" async defer></script>
+    <!-- Open graph tags -->
+<meta name="twitter:card" content="JavaScriptの最新情報を紹介する週刊ブログ" />
+<meta name="twitter:site" content="@jser_info" />
+
+
+<meta property="og:title" content="JSer.info">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jser.info/ko/page/19/">
+<meta property="og:image" content="https://jser.info/media/logo.png">
+
+<meta property="og:description" content="JavaScriptの最新情報を紹介する週刊ブログ">
+<meta property="og:site_name" content="JSer.info">
+
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q66PHF829Y"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q66PHF829Y');
+</script>
+<script>
+    /*
+    ga-on="click" がついている要素がクリックされたら、
+    イベントをトリガーして、Google Analytics に送信する
+    @example
+    ga-on="click"
+    ga-event-name="join_slack"
+    @see https://developers.google.com/analytics/devguides/collection/ga4/tag-guide?hl=ja#custom_events
+     */
+    document.addEventListener('DOMContentLoaded', function () {
+        const gaOnElements = document.querySelectorAll('[ga-on="click"]');
+        gaOnElements.forEach(function (element) {
+            element.addEventListener("click", function () {
+                const eventName = element.getAttribute('ga-event-name');
+                gtag('event', eventName);
+            });
+        });
+    });
+</script>
+
+</head>
+
+
+<body>
+<header>
+    <a href="https://github.com/jser/jser.github.io" class="github-ribbon">
+        <img style="position: absolute; top: 0; right: 0; border: 0;"
+             src="/public/img/github-ribbon.png"
+             alt="Fork me on GitHub"
+             loading="lazy"
+        >
+    </a>
+    <div class="global-header">
+    <h1 class="site-title"><a href="/ko/" title="JSer.info">
+        <!-- 3:1 aspect ratio-->
+        <img
+            alt=""
+            src="/public/img/logo.png"
+            width="518"
+            height="172"
+    /></a></h1>
+    <h2 class="site-description">JavaScript의 최신 소식을 소개하는 주간 블로그</h2>
+    <nav class="lang-menu">
+        <ul>
+            <li><a href="/" data-alt-href="/page/19/">日本語</a></li>
+            <li><a href="/ko/" data-alt-href="/ko/page/19/">한국어</a></li>
+        </ul>
+        
+    </nav>
+</div>
+
+</header>
+<div class="content-wrapper">
+    <article>
+        <div class="page-content">
+            
+
+<div class="home">
+
+    <h1>글 목록</h1>
+    
+    <section>
+        <div class="article">
+            <header>
+                <h1><a href="/ko/2019/09/17/chrome-77typescript-3.7can-i-use-and-mdn/">2019-09-17: Chrome 77, TypeScript 3.7 로드맵, Can I use and MDN</a></h1>
+            </header>
+            <p>JSer.info #453 - Chrome 77가 릴리스 됐습니다.
+
+
+New in Chrome 77  |  Web  |  Google Developers
+
+
+Chrome 77에서는 PerformanceObse...</p>
+            <div class="post-meta">
+                <span class="post-date">2019년09월17일</span>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="article">
+            <header>
+                <h1><a href="/ko/2019/08/20/parcel-2.0.0-anpmreact-devtools/">2019-08-20: Parcel 2.0.0 α, npm의 로드맵, 새로운 React DevTools</a></h1>
+            </header>
+            <p>JSer.info #449 - Bundler인 Parcel 2.0.0 α 버전이 공개됐습니다.
+
+
+🚀 Parcel 2.0.0-alpha.1 is here! 📦 - devongovett - Medium
+
+
+Par...</p>
+            <div class="post-meta">
+                <span class="post-date">2019년08월20일</span>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="article">
+            <header>
+                <h1><a href="/ko/2019/08/06/chrome-76react-16.9slack-desktop/">2019-08-06: Chrome 76, React 16.9, Slack Desktop 리팩터링</a></h1>
+            </header>
+            <p>JSer.info #447 - Chrome 76이 릴리스됐습니다.
+
+
+New in Chrome 76  |  Web  |  Google Developers
+Deprecations and removals in Ch...</p>
+            <div class="post-meta">
+                <span class="post-date">2019년08월06일</span>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="article">
+            <header>
+                <h1><a href="/ko/2019/07/30/mithril.js-2electron-6react/">2019-07-30: mithril.js 2, Electron 6, React 입문 가이드</a></h1>
+            </header>
+            <p>JSer.info #446 - 싱글 페이지 애플리케이션 용 자바스크립트 프레임워크인 Mithril 2가 릴리스됐습니다.
+
+
+Release v2.0.1 · MithrilJS/mithril.js
+
+
+비호환적 변경 ...</p>
+            <div class="post-meta">
+                <span class="post-date">2019년07월30일</span>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="article">
+            <header>
+                <h1><a href="/ko/2019/07/23/typescript-3.6-betapostmessagenode.js-12/">2019-07-23: TypeScript 3.6 Beta, postMessage와 성능, Node.js 12의 변경 사항</a></h1>
+            </header>
+            <p>JSer.info #445 - TypeScript 3.6 Beta가 릴리스 됐습니다.
+
+
+Announcing TypeScript 3.6 Beta | TypeScript
+Roadmap · microsoft/Typ...</p>
+            <div class="post-meta">
+                <span class="post-date">2019년07월23일</span>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="article">
+            <header>
+                <h1><a href="/ko/2019/07/16/firefox-68.0hermesjs-engine-for-react-nativepagespeed-insights-5/">2019-07-16: Firefox 68.0, Hermes(JS Engine for React Native), PageSpeed Insights 5</a></h1>
+            </header>
+            <p>JSer.info #444 - Firefox 68.0이 릴리스 됐습니다.
+
+
+Firefox 68.0, See All New Features, Updates and Fixes
+Firefox 68 for devel...</p>
+            <div class="post-meta">
+                <span class="post-date">2019년07월16일</span>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="article">
+            <header>
+                <h1><a href="/ko/2019/07/09/babel-7.5.0dynamic-importnext.js-9dynamic-routingreact-native-0.60/">2019-07-09: Babel 7.5.0(Dynamic Import), Next.js 9(Dynamic routing), React Native 0.60</a></h1>
+            </header>
+            <p>JSer.info #443 - Babel 7.5.0이 릴리스됐습니다.
+
+
+Release v7.5.0 · babel/babel
+7.5.0 Released: dynamic import and F# pipelines...</p>
+            <div class="post-meta">
+                <span class="post-date">2019년07월09일</span>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="article">
+            <header>
+                <h1><a href="/ko/2019/07/04/npm-6.9.2ecmascript-2019dark-mode/">2019-07-04: npm 6.9.2, ECMAScript 2019 릴리스, Dark Mode</a></h1>
+            </header>
+            <p>JSer.info #442 - 잠시동안 beta인 채로 릴리스가 멈춰있던 npm 6.9.1이 릴리스됐습니다.
+
+
+Release: npm@6.9.1 - 📣 announcements - npm forum
+
+
+npm...</p>
+            <div class="post-meta">
+                <span class="post-date">2019년07월04일</span>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="article">
+            <header>
+                <h1><a href="/ko/2019/06/11/mathjs-v6modern-javascriptaudits-in-web-inspector/">2019-06-10: mathjs v6, Modern JavaScript 패키지 배포, Audits in Web Inspector</a></h1>
+            </header>
+            <p>JSer.info #439 - 수치 계산 라이브러리 Math.js v6가 릴리스됐습니다.
+
+
+mathjs v6: a monolith turned modular - Jos de Jong
+
+
+Math.js는 200...</p>
+            <div class="post-meta">
+                <span class="post-date">2019년06월11일</span>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="article">
+            <header>
+                <h1><a href="/ko/2019/06/04/async.js-3.0.0asyncawaitava-2.0.0verdaccio-4npm-registry/">2019-06-04: async.js 3.0.0(async/await 대응), AVA 2.0.0, Verdaccio 4(npm registry)</a></h1>
+            </header>
+            <p>JSer.info #438 - 비동기 처리 흐름을 다루는 라이브러리인 Async 3이 릴리스 됐습니다.
+
+
+https://github.com/caolan/async/blob/master/CHANGELOG.md#...</p>
+            <div class="post-meta">
+                <span class="post-date">2019년06월04일</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pagination links -->
+    <nav>
+        <div class="pagination">
+            
+                
+                <a href="/ko/page/18/" class="previous">이전 글</a>
+                
+            
+            <span class="page_number ">Page: 19 of 32</span>
+            
+            <a href="/ko/page/20/" class="next" rel="next">다음 글</a>
+            
+        </div>
+    </nav>
+</div>
+
+        </div>
+    </article>
+    <aside>
+        <div class="page-sidebar">
+    <div class="profile">
+        <a href="https://twitter.com/azu_re" title="Twitter: azu_re">
+            <img src="/public/img/azu.png" alt=""></a>
+
+        <h2><a href="https://twitter.com/azu_re">azu</a></h2>
+    </div>
+    
+    <div class="social-icons">
+        <a class="social-icon__twitter" href="https://twitter.com/jser_info" title="Twitter">
+            <img src="/public/svg/twitter.svg" alt="" width='28' height='28' loading="lazy">
+        </a>
+        <a class="social-icon__github" href="https://github.com/jser" title="GitHub">
+            <img src="/public/svg/github.svg" alt="" width='28' height='28' loading="lazy">
+        </a>
+        <a class="social-icon__rss" href="https://jser.info/ko/rss/" title="RSS Feed">
+            <img src="/public/svg/feed.svg" alt="" width='28' height='28' loading="lazy">
+        </a>
+        <a class="social-icon__feedly" href='https://feedly.com/i/subscription/feed%2Fhttps://jser.info/ko/rss/'
+            target='blank'>
+            <img id='feedlyFollow' src='https://s3.feedly.com/img/follows/feedly-follow-square-flat-green_2x.png' alt=''
+                width='28' height='28' loading="lazy">
+        </a>
+    </div>
+    
+    <nav>
+        <div class="search-bar">
+            <div class="search-and-submit">
+                <form class="search-box" method="get" action="https://www.google.co.jp/search">
+                    <label>
+                        <input type="search" name="q" placeholder="Enter Search" />
+                    </label>
+                    <input type="hidden" name="q" value="site:jser.info">
+                    <button type="submit">
+                        <span class="drawic drawic-search"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="side-menu">
+            <h1>페이지</h1>
+            <ul>
+                
+                <li><a class="page-link" href="https://jser.info/ko/about/" title="JSer.info About">JSer.info About</a></li>
+                
+                <li><a class="page-link" href="https://jser.info/ko/support" title="JSer.info Sponsors">JSer.info Support</a></li>
+                
+                <li><a class="page-link" href="https://jser.info/ko/sponsor/" title="JSer.info Sponsors">JSer.info Sponsors</a></li>
+            </ul>
+        </div>
+        <div class="side-menu">
+            <h1>최신 글</h1>
+            <ul>
+                
+                
+                <li><a class="page-link" href="/ko/2024/01/28/firefox-122-deno-1.40-safari-17.4-beta/">2024-01-28: Firefox 122, Deno 1.40, Safari 17.4 Beta</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/ko/2024/01/21/astro-4.2-bun-1.0.24bun-shell-remixspa/">2024-01-21: Astro 4.2, Bun 1.0.24(Bun Shell), Remix SPA 모드</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/ko/2024/01/16/jser-13th/">JSer.info 13주년: JavaScript 정보처 정리하기</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/ko/2024/01/11/biome-v1.5-node.js-v20.11.0-rspack-0.5/">2024-01-11: Biome v1.5, Node.js v20.11.0, Rspack 0.5</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/ko/2024/01/02/vue-3.4-vue-2.xeol-quick-lint-js-3.0.0-astrodeno2023/">2024-01-02: Vue 3.4, Vue 2.x의 EOL, quick-lint-js 3.0.0, Astro와 Deno 2023년 정리하기</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/ko/2023/12/23/date-fns-3.0.0-firefox-121-react-aria-components-1.0.0-catalyst/">2023-12-23: date-fns 3.0.0, Firefox 121, React Aria Components 1.0.0, Catalyst</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/ko/2023/12/15/safari-17.2-deno-1.39webgpu-sveltekit-2/">2023-12-15: Safari 17.2, Deno 1.39(WebGPU), SvelteKit 2</a></li>
+                
+                
+                
+                <li><a class="page-link" href="/ko/2023/12/08/redux-5.0.0-vitest-1.0.0-astro-4.0/">2023-12-08: Redux 5.0.0, Vitest 1.0.0, Astro 4.0</a></li>
+                
+                
+            </ul>
+        </div>
+    </nav>
+</div>
+
+    </aside>
+</div>
+<footer>
+    <div class="page-footer">
+    <div class="copyright-footer">
+        <div class="copyright">
+            <p>JSer.info is maintained by @<a href="https://twitter.com/azu_re"
+                                              title="azu (azu_re) on Twitter">azu_re</a>.
+            </p>
+        </div>
+        <div class="cc-license">
+            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+                <img alt="Creative commons LICENSE"
+                     style="border-width:0"
+                     width="88"
+                     height="31"
+                     src="https://i.creativecommons.org/l/by/4.0/88x31.png"
+                     loading="lazy"></a>
+        </div>
+    </div>
+</div>
+
+</footer>
+<style>
+    @media screen and (max-width: 1000px) and (max-height: 800px) {
+        .ping-show-button {
+            display: none !important;
+        }
+    }
+
+    .ping-show-button {
+        color: #000000;
+        z-index: 100;
+        position: fixed;
+        bottom: 0;
+        right: 10px;
+        padding: 1em 3em;
+        background-color: #ffffff;
+        border: 1px solid #868686;
+        border-top-left-radius: .5em;
+        border-top-right-radius: .5em;
+        font-size: 12px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<a
+    class="ping-show-button"
+    href="https://join.slack.com/t/jserinfo/shared_invite/zt-g2shzp7o-f_tj6OaphCAFw5Qlt2Jw0A"
+    ga-on="click"
+    ga-event-name="join_slack"
+    target="_blank"
+><img src="/public/svg/slack.svg" alt="" width="28" height="28" /><span>JSer.info Slackに参加する</span></a>
+
+</body>
+</html>
